@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+<h1>Ejemplos del uso de formularios en HTML 5</h1>
+
+<!-- 1) Elementos de formularios -->
+<!-- Cuando un formulario se deja sin action es como si se enviara a la misma pagina -->
+
+<!-- <form autocomplete="on">
+    <h3>Formularios en html</h3>
+    <label for="Nombre">Formulario</label> 
+    <input type="text" name="Nombre" size="30" placeholder="Nombre usuario" minlength="5" maxlength="30"> <br>
+    <input type="tel" name="Nombre" placeholder="Telefono usuario"> <br>
+    <input type="number" name="Nombre" placeholder="Edad usuario" required max="100" min="0"> <br>
+    <input type="time" name="Nombre" placeholder="Hora actual"> <br>
+    <input type="datetime-local" name="Nombre" placeholder="Hora y fecha actual"> <br>
+    <input type="email" name="Nombre" placeholder="Correo electronico" disabled> <br>
+    <input type="password" name="Nombre" placeholder=" Clave usuario" required> <br>
+    <input type="submit" value="Send" placeholder="Enviar"> <br>
+    <input type="reset" value="Resetear" placeholder="Resetar"> <br>
+    <input type="search" value="Aquí puedes buscar algo" placeholder="Ingresa algo" readonly>
+</form>  -->
+
+
+<!-- 1.1) Ejemplo sencillo de formulario  -->
+<form action="formularios.html" method="get">
+    <h2>Formulario de registro</h2><br>
+    <input type="text" name="name" placeholder="Ingrese su nombre"><br>
+    <input type="text" name="surname" placeholder="Ingrese su apellido"><br>
+    <input type="datetime-local" name="" id=""> <br>
+    <input type="submit" value="Send the form">
+    <button type="submit"></button>
+</form>
+
+<br>
+<br>
+
+
+<h2>Radios, selects and checkboxs</h2>
+<!-- 2) Radios = De varias opciones solo se puede escoger una -->
+<form>
+    <h3>Ejemplos de radios</h3>
+<p>Choose your favorite programming lenguage</p>
+<label for="radio.js">JavaScript</label>
+<input type="radio" name="lenguage" id="radio.js" value="js"> 
+<label for="radio.python">Python</label>
+<input type="radio" name="lenguage" id="radio.python" value="python" required> 
+<label for="radio.java">Java</label>
+<input type="radio" name="lenguage" id="radio.java" value="java"> 
+<input type="submit" value="enviar">
+</form>
+
+<!-- Otro ejemplo de radios -->
+<form action="formularios.html" method="get">
+    <h3>Elige tu genero de peliculas preferido</h3>
+    <label for="terr">Terror</label>
+    <input type="radio" name="peliculas" id="terr" value="terror">
+    <label for="com">Comedia</label>
+    <input type="radio" name="peliculas" id="com" value="comedia">
+    <label for="dram">Drama</label>
+    <input type="radio" name="peliculas" id="dram" value="drama">
+    <label for="acc">Acción</label>
+    <input type="radio" name="peliculas" id="acc" value="accion">
+    <label for="rom">Romantico</label>
+    <input type="radio" name="peliculas" id="rom" value="romantico">
+    <input type="submit" value="Send">
+</form>
+<br>
+<br>
+
+<!-- 3) Selects = Lista desplegable de opciones -->
+<form>
+    <h3>Ejemplo  de selects</h3>
+<p>Select your lenguage</p>
+<select name="lenguages" id="lenguages" required>
+<option value="es" selected>spanish</option>
+<option value="en">english</option>
+<option value="fr">french</option>
+<option value="it">italian</option>
+<option value="gr">german</option>
+</select> <br>
+<input type="submit" value="send" > <br>
+<input type="reset" value="reset">
+</form>
+
+<!-- Otro ejemplo de selects -->
+<form action="">
+    <h3>selects</h3>
+    <p>elige tus opciones de las listas</p>
+    <select name="Mascotas" id="Mascotas">
+        <option value="perro">Dogo</option>
+        <option value="gato">Michi</option>
+        <option value="loro">Loro</option>
+        <option value="conejo">Conejo</option>
+    </select>
+    <select name="Materias" id="Materias">
+        <option value="Matematicas">Matematicas</option>
+        <option value="Ingles">Ingles</option>
+        <option value="Fisica">Fisica</option>
+        <option value="Algoritmos">Algoritmos</option>
+    </select>
+    <select name="Motos" id="Motos">
+        <option value="Versys">Versys</option>
+        <option value="Mt 09">Mt-09</option>
+        <option value="Dr 650">Dr 650</option>
+        <option value="Xt 660">Xt 660</option>
+    </select>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+</form>
+
+
+<!-- 4) Checkboxs son esas palomitas donde la intención es que el usuario pueda seleccionar mas de una opción --> -->
+
+<form>
+    <h3>Ejemplo  de Checkboxs</h3>
+<p>Elige tus intereses</p>
+<label>Deportes</label>
+<input type="checkbox" name="intereses" value="deportes">
+<br>
+<label>
+    <input type="checkbox" name="intereses" value="salud">
+    salud
+ </label> <br>
+<label>
+    <input type="checkbox" name="intereses" value="politica">
+    politica
+ </label> <br>
+ <label>
+    <input type="checkbox" name="intereses" value="finanzas">
+    finanzas
+ </label> <br>
+<label>
+    <input type="checkbox" name="intereses" value="programacion">
+    programacion
+ </label> <br>
+ <input type="submit" value="Send"> 
+ <input type="reset" value="Reset"> 
+</form>
+
+
+<form>
+    <h3>Calendario Forma 1</h3>
+    <label for="hora">
+        <span>Hora</span>
+        <input type="time" id="hora" name="hora">
+    </label>
+    <label for="dia">
+        <span>Dia</span>
+        <input type="date" id="dia" name="dia">
+    </label>
+    <label for="semana">
+        <span>Semana</span>
+        <input type="week" id="semana" name="semana">
+    </label>
+    <label for="mes">
+        <span>Mes</span>
+        <input type="month" id="mes" name="mes">
+    </label>
+</form>
+
+<form action="">
+        <h3>Calendario Forma 2</h3>
+        <label for="calendario">
+            <span>Calendario</span>
+            <input type="datetime-local" name="calendario" id="calendario">
+        </label>
+
+
+    </form>
+
+</body>
+</html>

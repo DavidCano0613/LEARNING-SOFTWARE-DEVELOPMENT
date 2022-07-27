@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/2.arquitecturas.css"/>
+    <title>BEM</title>
+  </head>
+  <body>
+    <!-- 
+
+¿Qué son y para qué nos sirven las arquitecturas CSS?
+Sirven para mantener un orden y una coherencia durante todo el proyecto. Tiene los siguientes objetivos:
+
+Predecibles: Escribir reglas claras.
+Reutilizable: No escribir código redundante.
+Mantenible: Que sea fácil de leer y adaptable a los estándares.
+Escalable: Que pueda crecer fácilmente sin afectar el rendimiento.
+.
+Estos objetivos se deben ver reflejados en buenas practicas que debe conocer todo el equipo involucrado en el proyecto como:
+
+-Establecer reglas
+-Explicar la estructura base
+-Establecer estándares de codificación
+-Evitar largas hojas de estilo
+-Documentación 
+
+-->
+
+<!-- 
+Bem es una metodología que permite nombrar clases css para hacer el código mas modular se
+basa en una estructura bloque elemento y modificador.
+
+        BLOQUE: Es el contenenedor general es independiente y no necesita de otros elementos para existir, como un footer, un section, un menu, un article o un main Los bloques se nombran de tal forma que se represente al bloque. footer class="footer"
+
+        ELEMENTO: Los elementos estan ligados a lo bloques, siempre estaran y dependeran de estos mismo. Por ejemplo en un galeria de fotos. Las fotos son los elementos de el bloque galeria, es decir las imagenes seran elementos dependientes del bloque galeria. Siempre se debe "nombre el nombre del bloque padre" __ elemento. Ejemplo: footer__img o menu__item o galeria__img
+
+        MODIFICADOR: Son usados tanto en elementos como en bloque. Se usan para representar una caracteristica diferente que tendra el bloque o elemento. Los modificadores se escribren "nombre del bloque" "nombre del bloque otra vez "--"caracteristica"
+-->
+
+    <nav class="nav">
+      <div class="nav__img">
+        <img src="/images/nim-lang.svg" alt="" class="nav__logo" />
+        <h1>Nim the best company</h1>
+      </div>
+      <div class="nav__links">
+        <a href="" class="nav__link">Inicio</a>
+        <a href="" class="nav__link">Acerca de nosotros</a>
+        <a href="" class="nav__link nav__link--active">Contacto</a>
+      </div>
+    </nav> 
+
+
+
+
+  </body>
+</html>

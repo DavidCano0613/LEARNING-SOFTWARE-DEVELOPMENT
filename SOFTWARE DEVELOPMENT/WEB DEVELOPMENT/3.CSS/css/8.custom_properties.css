@@ -1,0 +1,19 @@
+/* Las variables definidas en root son globales se aplican a todos los elementos html y se pueden nombrar de forma personalizada, la forma correcta de usar estas es para valores que se repitan más de una vez muy util en colores, paddings, margins y algunos otros elementos del box model, también para transiciones, animaciones y waves. Con root las propiedades se heredan a los hijos también. Esto quiere decir que las custom properties solo son accecibles desde donde fueron declaradas o desde sus hijos. Además las custom properties también se pueden sobre-escribir*/
+
+:root{
+  --amarillo-js: rgb(237, 237, 7);
+  --letra: Arial;
+  --bordes-titulo: 15px;
+
+   
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  border-radius: var(--bordes-titulo);
+  background-color: var(--amarillo-js);
+  font-family: var(--letra);
+}

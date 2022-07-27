@@ -1,0 +1,25 @@
+Comandos para la terminal para Windows
+
+-dir muestra lo que hay en un directorio.
+
+-cd "nombre del directorio": Cambia de directorio
+
+-cd.. devuelve entre carpetas
+
+-cd/ devuelve hasta el disco C
+
+-cls borra la pantalla
+
+-cd.. devuelve entre carpetas
+
+-mkdir: crea un directorio osea una carpeta
+
+-md: crea un directorio también
+
+-rmdir - elimina un directorio
+
+-copy con "nombre del archivo".extensión: Crea un archivo y control z para no escribir mas.
+
+-del nombre del archivo: Elimina un archivo
+
+

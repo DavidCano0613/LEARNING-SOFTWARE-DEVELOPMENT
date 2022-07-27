@@ -1,0 +1,554 @@
+Functions are reusable blocks of code that you can write once and run again and again, saving the need to keep repeating code all the time. This is really useful. There are a number of ways to define functions, but for now we'll concentrate on one simple type. Here we have defined a function by using the keyword function, followed by a name, with parentheses put after it. After that we put two curly braces ({ }). Inside the curly braces goes all the code that we want to run whenever we call the function.
+
+async y defer indican al navegador que descargue los scripts en un hilo separado, mientras que el resto de la página (el DOM, etc.) se descarga, por lo que los scripts no bloquean la carga de la página.
+Si tus scripts se deben ejecutar inmediatamente y no tienen ninguna dependencia, utiliza async.
+Si tus scripts necesitan esperar a ser procesados y dependen de otros scripts y/o del DOM en su lugar, cárgalos usando defery coloca tus elementos <script> correspondientes en el orden que desees que el navegador los ejecute.
+
+A website consists of many files: text content, code, stylesheets, media content, and so on. When you're building a website, you need to assemble these files into a sensible structure on your local computer, make sure they can talk to one another, and get all your content looking right before you eventually upload them to a server. Dealing with files discusses some issues you should be aware of so you can set up a sensible file structure for your website.
+
+The short answer is that you should use a hyphen for your file names. The Google search engine treats a hyphen as a word separator but does not regard an underscore that way. For these reasons, it is best to get into the habit of writing your folder and file names lowercase with no spaces and with words separated by hyphens, at least until you know what you're doing. That way you'll bump into fewer problems later down the road.
+
+Clients are the typical web user's internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).
+Servers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.
+
+
+One of the hardest things to learn in programming is not the syntax you need to learn, but how to apply it to solve real world problems. You need to start thinking like a programmer — this generally involves looking at descriptions of what your program needs to do, working out what code features are needed to achieve those things, and how to make them work together.
+
+Your internet connection: Allows you to send and receive data on the web. It's basically like the street between your house and the shop.
+TCP/IP: Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the internet. This is like the transport mechanisms that let you place an order, go to the shop, and buy your goods. In our example, this is like a car or a bike (or however else you might get around).
+DNS: Domain Name System is like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the website's IP address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place (see below). This is like looking up the address of the shop so you can access it.
+HTTP: Hypertext Transfer Protocol is an application protocol that defines a language for clients and servers to speak to each other. This is like the language you use to order your goods.
+Component files: A website is made up of many different files, which are like the different parts of the goods you buy from the shop. These files come in two main types:
+Code files: Websites are built primarily from HTML, CSS, and JavaScript, though you'll meet other technologies a bit later.
+Assets: This is a collective name for all the other stuff that makes up a website, such as images, music, video, Word documents, and PDFs.
+
+The browser goes to the DNS server, and finds the real address of the server that the website lives on (you find the address of the shop).
+The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client (you go to the shop and order your goods). This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.
+If the server approves the client's request, the server sends the client a "200 OK" message, which means "Of course you can look at that website! Here it is", and then starts sending the website's files to the browser as a series of small chunks called data packets (the shop gives you your goods, and you bring them back to your house).
+The browser assembles the small chunks into a complete web page and displays it to you (the goods arrive at your door — new shiny stuff, awesome!).
+
+
+
+
+features
+pages
+ every time a web page does more than just sit there and display static information for you to look at 
+— displaying timely 
+content updates, 
+interactive maps, 
+animated 2D/3D graphics, 
+scrolling video 
+jukeboxes,
+layer of the layer cake
+ defining paragraphs
+headings,
+data tables, 
+embedding 
+images 
+videos 
+background colors
+fonts 
+laying out
+enables
+dynamically updating content
+mark it up 
+get it looking nice
+dynamic behavior
+source code 
+run it live
+client-side
+Store useful values inside variables
+above example
+text label
+So-called
+ ready-made
+bookshelf
+They generally fall into two categories.
+correct-sized screws
+surrounding computer environment
+plot it on a map.
+retrieves
+to run your code in
+embed custom maps
+ functionality.
+ there are a lot of basics to cover first. 
+let's move on!
+and while doing so
+Let's briefly recap 
+load 
+ execution environment
+ factory 
+outputs a product
+bucket 
+tab
+customized
+ceil
+floor
+ pirates 
+running order 
+attaching 
+event listener
+so that
+swapped 
+it would no longer work  
+ error returned 
+objects referenced
+Interpred vs compiled code 
+ context of programming
+ its programmer-friendly text form and processed directly from that.
+ binary format,
+program source code
+script 
+standpoint
+JavaScript is still considered an interpreted language, since the compilation is handled at run time, rather than ahead of time.
+server-side
+ development. Client-side code is code that is run on the user's computer 
+Dynamic code
+Static code 
+update the display of a web page
+generating new content as required
+ pulling data from a database
+whereas
+ slightly
+ approaches
+ is referred to as static
+text editor.
+clickable button.
+placed below.
+ If your example doesn't seem to work
+fussy
+external file
+directory
+sample
+filename extension
+ It works just the same
+ reusable across multiple
+ HTML is easier to read without huge chunks of script dumped in it.
+ refresh your browser
+Inline javascript handlers
+ you'll come across bits of actual JavaScript code
+ inefficient
+pollute
+You can then loop through the buttons, assigning a handler for each using
+no matter how many are on the page, nor how many are added or removed.
+reload
+neat
+you should find that all of the buttons when clicked will create a paragraph.
+ getting scripts to load at the right time. 
+on a page is loaded in the order in which it appears.
+you are trying to do something to.
+parsed
+get around
+you can see this structure around the code:
+tag element has been reached.
+simultaneously
+old-fashioned solution
+slowing down your site.
+major performance issue,
+On larger sites
+bypass the problem 
+fetched
+rendering 
+You get no guarantee
+script loading methods
+cropped
+ load in
+get on 
+lobby
+depend on the DOM being in place 
+during the fetch process.
+If your scripts should be run immediately and they don't have any dependencies, then use async.
+If your scripts need to wait for parsing and depend on other scripts and/or the DOM being in place, load them using defer and put their corresponding <script> elements in the order you want the browser to execute them.
+As with 
+fellow developers on how the code works
+ for larger applications.
+forward slash
+ single line
+multi-line
+ annotate
+like so 
+append 
+Along the way
+fit in
+amongst other things.
+daunting 
+ will make sense going forward
+we will plunge straight into the practical, getting you to jump straight in and build your own JavaScript examples.
+splash 
+what the process of creating a simple JavaScript program is like
+build up 
+Prerequisites
+literacy 
+gain at least a basic understanding of what writing a JavaScript program involves.
+In subsequent articles you'll revisit all the features shown here in a lot more detail
+ The code syntax
+ but the concepts are still largely the same.
+Thinking like a programmer
+mixture
+The more you code, the better you'll get at it
+programmer brain
+plenty 
+throughout the course.
+and review the general process of dissecting it into tangible tasks.
+With that in mind
+fewer
+brief 
+actionable tasks in as much of a programmer mindset as possible
+mess up
+as we go 
+setup
+unlike
+initialized
+assign
+ equals sign
+mathematical algorithm.
+ keyword
+Summary
+resetting
+constants store references
+are used to control submitting the guess later on.
+keep track
+This section of the code sets up
+ parentheses
+curly braces
+followed by
+perform tests, do math, join strings together, and other such things.
+arithmetic operators
+Addition
+Subtraction
+Multiplication 
+Division
+join together 
+concatenation
+one at time
+assignment operators
+shortcut
+comparison operators 
+spit out 
+appropriately.
+At this point
+built-in
+wheter a ceartain condition is true or no
+we have a nicely implemented
+The constructs that listen out for the event happening are called event listeners
+ and the blocks of code that run in response to the event firing are called event handlers.
+input values 
+output values 
+listen out for 
+should work — to a point.
+ then walk through it
+disable 
+ form text input
+which would mess things up.
+append 
+Installing basic software
+install
+computer running Windows, macOS or Linux.
+to write code in 
+text editor 
+suitable
+, as they rely on hidden elements that interfere with the rendering engines used by web browsers.
+to test code in 
+mobile devices 
+target audience 
+visually-impaired users
+ version control system
+ collaborate on a project with a team
+avoid conclicts 
+hosting service 
+automation
+to automatically perform repetitive tasks, such as minifying code and running tests.
+code hints.
+ live previews
+ compatible
+You might sometimes run into a project that requires support for it.
+What information does my website offer
+What does my site do
+First things first 
+your first try 
+ simple high-level terms
+detailed guidelines
+brand book
+sketching out your design
+you should get in the habit of doing this
+start out
+ Even on real, complex websites, the design teams usually start out with rough sketches on paper and later on build digital mockups using a graphics editor or web technologies.
+ UX designers have a somewhat more abstract role in addressing how users will experience and interact with the website.
+ Keep these close by.
+ that mirrors the published website's file structure on the server.
+root of your hard drive.
+an aside on casting and spacing 
+no spaces
+lowercase
+upercase
+case-sensitive
+it may not work.
+underscores
+hyphens
+File paths
+route 
+exactly as shown. 
+For now, this is about all you need to know.
+ but before long
+simplified diagram
+toolbox
+ which is a shop you want to buy something from.
+communication protocols 
+how data should travel across the internet
+ transport mechanisms
+or however else you might get around
+ retrieve 
+the website lives on 
+a bit later 
+web address
+analogy 
+server approves the client's request
+parsed by the browser
+lead
+Packets 
+chunks 
+ exchange 
+dealer 
+gather
+What went wrong ?
+Never fear
+this article aims to save you
+tear your hair out 
+ These are spelling errors
+so it's not quite that simple 
+differentiators as you drill down deeper
+track down
+ alongside
+square brackets and separated by commas. 
+"dynamically typed language
+data type a variable will contain 
+error-prone
+somewhat
+Use const when you can, and use let when you have to.
+This means that if you can initialize a variable when you declare it, and don't need to reassign it later, make it a constant.
+You can find some further tests to verify that you've retained this information before you move on
+By now
+assess whether
+suitable value
+Assessments
+single quotes
+doble quotes
+Concatenating 
+we start off small
+Retrieve 
+Deprecated. Avoid these methods.
+They are of limited use, as they provide only a subset of the available HTML tags and attributes.
+Deprecated 
+Changing case 
+capitalization 
+match
+pad
+
+Types of numbers 
+Integers
+Floating point numbers
+Doubles 
+Binary
+Octal
+Hexadecimal
+brain melting
+reacquaint 
+corresponding
+custom functions 
+custom name with parentheses straight after it
+clear up 
+rather than having to write out
+write out 
+ browser's built-in
+hoisted 
+parameters
+Parameters are sometimes called arguments, properties, or even attributes.
+The browser's built-in string
+commas.
+ character,
+Default parameters 
+Anonymous and arrow functions 
+function expressions are not hoisted.
+sample
+scope 
+enclosures
+occur
+At best 
+At worst 
+The zoo keeper
+ restock
+throw an error
+The same scoping rules
+tidy
+are locked inside
+Take care not to get these confused.
+Number values are typed in without quote marks 
+Increment and drecrement operator 
+Functions — reusable blocks of code
+how to invoke and define them, scope, and parameters.
+all the way through the course so far;
+Pretty much anytime
+Your are making use 
+Built-in brower functions
+if needed.
+
+A built in browser function couldn't be written in JavaScript — many of these functions are calling parts of the background browser code, which is written largely in low-level system languages like C++, not web languages like JavaScript.
+
+Inner workings of structured JavaScript objects yet 
+
+Built-in functions, as well as the built-in objects and their corresponding methods
+
+meaning that they are locked away in their own separate compartments, unreachable from code outside the functions.
+
+The top level outside all your functions is called the global scope. Values defined in the global scope are accessible from everywhere in the code.
+
+This might be done maliciously, or just by accident.
+
+When attempting
+
+Keeping parts of your code locked away in functions avoids such problems, and is considered the best practice.
+-Packed with info
+-Rank
+-Few notable exceptions
+-Misconception
+-Solid design  
+-Incluencing behavior
+-User events
+-Hyper-targeted ads
+-A/B testing
+-Heat maps
+-DevTools
+-Libraries
+-Break into the tech industry
+-Insane demand 
+-Complexities of databases
+-Data design 
+-Scale
+-Replicate
+-Robust
+-Create good schemas for effcient querying
+-Sub-optimal  
+-Maintainability reasons  
+-When the apps get above a certain size
+-To bring in the heavy hitters 
+-Enterprise
+-Enterprise level development
+-Strong typing 
+-Compile time checks
+-Microservice / Microservice model /Mini services each of wich does a distintic thins.
+-monolith
+-Scale up and down your number of apps instances
+-Insights on each software developer niche
+-Handeling requests
+-Scale horiontally 
+-Self-contained amount of code 
+-Communication chanel
+-Rapid prototyping 
+-Flexibility
+-Optimized for high performance 
+-Process large amounts of data
+-Format
+-Data analysts
+-Real-time data streams
+-Well-tread area
+-Bottlenecks
+-Consolidate
+-Server management
+-Traffic
+-Deploy: When the code is push onto the server 
+-Fix bugs
+-Containerization
+-Virtualization
+-Continuous integration
+-Continuous deployment
+-Maximize up 
+-Embedded systems 
+-Assembly lenguage
+-Working close to the metal
+-Processors and ships
+-insane demand 
+-submitting a form 
+-blurry 
+-beneath 
+User's internet-connected devices
+app crashed
+Web-accessing software available 
+The webpage is downloaded from the server onto the client machine to be Displayed in the user's web browser.
+We've described above
+A shop you want to buy something from.
+Communication protocols 
+This is like the transport mechanisms that let you place an order
+However else you might get around).
+Address book
+Type
+add-on, 
+bin icon
+drag
+new field 
+Addons 
+Scroll back
+Scroll through
+Save changes 
+legacy link
+preview button
+
+Web address 
+Retrieve
+The website's IP address 
+Code files: Websites are built primarily from HTML, CSS, and JavaScript, though you'll meet other technologies a bit later.
+User-Frienly 
+
+Node is eveiorment to run js outside of the brosswerd
+built on top of js engine 
+ripped out the tool 
+large community 
+geature developmente 
+fullstasck apps
+rebel 
+console
+play around 
+cli executable
+drag and drop 
+name whatever you want
+side note
+variable by the name
+bump up the font size
+sidebar
+equal 
+set up a "" 
+if that is the case otherwise
+large number
+note up 
+complicated functionality 
+jam 
+traditional approach 
+execute the/this code
+terminal
+zoom in 
+root 
+type
+kepp in mind
+full path
+file name
+run it
+the whole  point
+lines of code 
+showcase
+integrated terminal 
+shortcut 
+navegate through 
+small number
+at any point 
+when you have executed your code
+let´s quickly cover
+global variables
+save in a file 
+complex app
+copy and paste
+create a file and dump it 
+Overview
+examine in detail
+dynamic request
+
+
+

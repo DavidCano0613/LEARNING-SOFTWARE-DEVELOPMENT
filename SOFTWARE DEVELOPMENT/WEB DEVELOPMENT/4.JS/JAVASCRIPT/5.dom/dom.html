@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document object model en JS</title>
+  </head>
+  <style>
+    :root {
+      --yellow-color: #f7df1e;
+      --dark-color: #222;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Manejo del Dom en HTML</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+        voluptates quaerat temporibus exercitationem asperiores culpa, aliquid,
+        perferendis, sed aliquam earum recusandae rem? Nisi voluptatem tempore
+        recusandae adipisci officia, veritatis excepturi!
+      </p>
+      <nav id="menu">
+        <ul>
+          <li class="lista"><a href="">elemento1</a></li>
+          <li class="lista"><a href="">elemento2</a></li>
+          <li class="lista"><a href="">elemento3</a></li>
+          <li class="lista"><a href="">elemento4</a></li>
+          <li class="lista"><a href="">elemento5</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Hola</h1>
+    <h2>Hola 2</h2>
+    <h3>Hola 3</h3>
+
+    <nav>
+      <ul>
+        <li><a href="">Hola</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="dom.html" method="get" id="formu">
+        <a
+          href="dom.html"
+          class="link-down"
+          style="background-color: #f7df1e; color: #222; padding: 1em"
+          Cdata-description="DOM"
+          >DOM</a
+        >
+        <label for="label">Ingrese su nombre</label>
+        <input
+          type="text"
+          name="nombreUser"
+          id="label"
+          placeholder="Ingresa tu nombre"
+        />
+        <label for="label">Ingrese su email</label>
+        <input
+          type="text"
+          name="emailUser"
+          id="label"
+          placeholder="Ingresa tu email"
+        />
+        <label for="label">Ingrese su password</label>
+        <input
+          type="text"
+          name="passwordUser"
+          id="label"
+          placeholder="Ingresa tu password"
+        />
+        <input type="submit" name="send" />
+      </form>
+
+      <p id="idparrafo" class="classp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+        numquam blanditiis quaerat ipsam necessitatibus accusamus! Quae eaque
+        sed, vero impedit enim illo! Amet error magni, id beatae minima
+        asperiores numquam!
+      </p>
+
+      <img src="" alt="" />
+
+      <section class="cards">
+        <h2>Imagenes</h2>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/Tech" alt="Tech" />
+          <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/landscapes" alt="landscapes" />
+          <figcaption>landscapes</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/bikes" alt="bikes" />
+          <figcaption>bikes</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://placeimg.com/200/200/dogs" alt="dogs" />
+          <figcaption>dogs</figcaption>
+        </figure>
+      </section>
+
+      <template id="template-id">
+        <figure class="card">
+          <img />
+          <figcaption></figcaption>
+        </figure>
+      </template>
+      <br />
+
+      <button onclick="alerta()">Evento con atributo html</button>
+      <br />
+      <br />
+
+      <button id="evento">Evento como manejador semántico</button>
+      <br />
+      <br />
+
+      <button id="eventoMultiple">Evento multiple</button>
+
+      <button id="evento-remover">Removiendo eventos</button>
+
+      <h4>Flujo de Eventos</h4>
+      <section class="eventos-flujo">
+        <div class="uno">
+          1
+          <div class="dos">
+            2
+            <div class="tres">
+              3
+              <br />
+              <a href="https://jonmircha.com/" target="_blank" rel="noopener"
+                >jhonmircha.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <footer>By Juan David</footer>
+    -->
+    <script src="./dom.js" type="module" defer></script>
+    <script src="./eventos.js" type="module" defer></script>
+    <script src="./ejerciciodeldom/archivo.js" type="module" defer></script>
+  </body>
+</html>

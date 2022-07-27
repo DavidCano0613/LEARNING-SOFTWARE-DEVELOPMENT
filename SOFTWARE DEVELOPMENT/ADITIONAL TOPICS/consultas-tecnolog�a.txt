@@ -1,0 +1,177 @@
+COSAS DE SOFTWARE PENDIENTES POR CONSULTAR. 
+
+*Que es la ingenieria
+*Cual es el hadware principal del computador
+*Qué son CPUS
+*Como se conecta el hadware con el software
+*Como se comunican las computadoras
+*Que son los centros de datos 
+*Que es la latencia
+*Red de cables de fibra optica
+*Que son cabeceras del host
+*Cual es el lenguaje de maquina
+*Nombres de dominio
+*Que es servidor DNS
+*Que es un sistema de procesamiento de la información
+*Que es una torre celular
+*Que es internet
+*Que es y como funciona un navegador
+*Que es el protocolo HTTP 
+*Como funciona un lenguaje de programación
+*Que es una IP
+*Que es un servidor 
+*Que es un routher y como se configura
+*Que es la terminal
+*Lenguaje de ensamblador
+*Que es la NUBE
+*Que es la calidad en el software
+*Que es un lenguaje de programación interpretado
+*Como saber cuales son algoritmos complejos y sencillos
+*Cual es el ciclo de vida del desarrollo del software 
+*Que es arquitectura de software
+*Corrimiento de BITS
+*Arquitectura cliente-servidor
+*Máquina virtual Bytecode
+*Fugas de memoria 
+*JIT Compiler 
+*Linux con Python 
+*Algoritmos de ordenamiento y de busqueda
+*Pilas en programacíón 
+*Arbol binarios 
+*Arboles enarios
+*Teoría de grafos
+*Como se distribuye un sistema
+*Como se conectan los sitemas entre sí
+*Diferentes capas de red
+*Que es atomic desing 
+*Que es desing sistem
+*Como funciona el hackeo
+*Como usar visual studio code
+*Trucos con visual studio code
+*Como escribir codigo mas rapido 
+*Trucos para ser mas productivo a la hora de desarrollar
+*Desastres que pueden ocurrir en el desarrollo 
+*Herramientas que todo desarrollador debe tener
+*Porque es mejor Linux y Mac para programar. 
+*Webs y foros que los desarrolladores usan para ver noticias y opiniones
+*Que son interfazes web
+*Todo sobre las APIS
+*Qué es un IDE
+
+Preguntas
+* Que es una petición de red?
+*Que es una VPN?
+* Por que falla una petición de red?
+* Como llega una petición de red a un servidor?
+* Que es DNS?
+* Que es Ajax?
+* Que es HTTP?
+* Que son los verbos o métodos en una petición HTTP?
+* Que es un cookie?
+* Que es un header en un petición HTTP?
+* Que es UDP?
+* Que es TCP?
+* Que es un socket?
+* Que es HTTPS?
+* Que es un CDN?
+* Que sucede de principio a fin cuando se inicia sesión en un web app?
+* Como se mantiene la sesión del usuario en un web app?
+* Que es y como funciona OAuth?
+* Que es un JWT?
+* Que es un REST API?
+* Que es un servicio web?
+* Que es la nube/cloud?
+* Que es tecnologia server less?
+* Que es un contenedor/container?
+* Que es docker?
+* Como funcionan los navegadores, que hacen al momento de escribir una dirección en la barra de navegación (chrome, firefox, etc)?
+* Que es la diferencia entre CSS y SASS?
+* Que es webpack?
+* Que es babel?
+* Que es npm?
+* Que es node?
+* Que es package.json?
+* Que es un linter?
+*Que es integración continua?
+*Que son procedimientos almacenados?
+*Que son gestores de paquetes?
+*Herramientas de desarrollo 
+*Dependencias de desarrollo
+
+JWT
+Apis Rest
+Asincronidad
+AJAX
+JSON
+XML
+ORM
+DevOps que son
+Que es el despliegue de aplicaciónes
+Git y GitHub/GitLab o similares.
+Bash (Scripting)
+Docker
+Npm / Parcel
+Testing
+Crud 
+Alta concurrencia 
+Peticiones al servidor 
+Hilo en front end
+
+VIDEOS PARA VER y SITIOS PARA LEER
+
+https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software
+https://es.wikipedia.org/wiki/Programa_inform%C3%A1tico
+
+
+https://developer.mozilla.org/es/docs/Learn/Common_questions/How_does_the_Internet_work
+https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works
+https://developer.mozilla.org/es/docs/Learn/Server-side/First_steps/Client-Server_overview
+https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines
+https://dev.opera.com/articles/http-basic-introduction/
+https://dev.opera.com/articles/http-lets-get-it-on/
+
+
+https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n
+https://es.wikipedia.org/wiki/Estructura_de_datos
+https://es.wikipedia.org/wiki/Subrutina
+https://es.wikipedia.org/wiki/Editor_de_c%C3%B3digo_fuente
+https://es.wikipedia.org/wiki/Compilador
+https://es.wikipedia.org/wiki/Int%C3%A9rprete_(inform%C3%A1tica)
+https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos
+https://es.wikipedia.org/wiki/Unix
+https://es.wikipedia.org/wiki/N%C3%BAcleo_Linux
+https://developer.mozilla.org/es/docs/Web/HTTP
+https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto
+https://concepto.de/http/
+https://profile.es/blog/que-es-un-algoritmo-informatico/#:~:text=Un%20algoritmo%20inform%C3%A1tico%20es%20un,paso%20para%20conseguir%20un%20fin.
+https://es.wikipedia.org/wiki/Entorno_de_desarrollo_integrado
+https://es.wikipedia.org/wiki/Crisis_del_software
+https://1984.lsi.us.es/wiki-ssoo/index.php/Hilos
+https://www.ionos.es/digitalguide/servidores/know-how/que-es-un-servidor-un-concepto-dos-definiciones/
+https://www.informaticaparatunegocio.com/blog/que-es-un-servidor-y-para-que-sirve/
+https://www.claranet.es/blog/que-tipos-de-servidores-hay
+https://desafiohosting.com/que-es-un-servidor/
+https://www.ticportal.es/glosario-tic/servidores
+http://ftp.campusvirtual.utn.ac.cr/objetos%20de%20aprendizaje%20profesores/plataformastecnologicas/puertos_de_una_computadora.html
+https://desarrollo.espino.info/la-alegria-de-programar/los-universos-de-las-aplicaciones.html
+https://desarrollo.espino.info/la-alegria-de-programar/la-especificacion-funcional.html
+https://desarrollo.espino.info/la-alegria-de-programar/los-lenguajes-de-programacion.html
+https://desarrollo.espino.info/la-alegria-de-programar/los-paradigmas-de-programacion.html
+https://desarrollo.espino.info/la-alegria-de-programar/los-principios-de-los-lenguajes-de-programacion.html 
+https://desarrollo.espino.info/la-alegria-de-programar/los-tres-principales-sistemas-operativos-cultura-general.html
+https://desarrollo.espino.info/la-alegria-de-programar/los-tres-principales-sistemas-operativos-cultura-general.html
+https://www.xataka.com/basics/memoria-ram-que-sirve-como-mirar-cuanta-tiene-tu-ordenador-movil
+https://edu.gcfglobal.org/es/informatica-basica/memoria-ram-y-disco-duro/1/
+https://www.xataka.com/robotica-e-ia/soy-programador-esto-que-creo-inteligencia-artificial-podra-quitarme-trabajo
+https://programmerclick.com/article/1318815420/
+https://ingenieriadesoftware.es/empleo-programador-inteligencia-artificial/
+https://www.bbvaopenmind.com/tecnologia/inteligencia-artificial/por-que-la-ia-nunca-podra-reemplazar-a-un-buen-empleado/
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays
+
+
+
+

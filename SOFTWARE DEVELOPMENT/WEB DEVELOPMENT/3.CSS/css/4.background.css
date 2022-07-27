@@ -1,0 +1,64 @@
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(80, 77, 77);
+  /* position: relative; */
+}
+
+.container{
+  width: 90%;
+  height: 120vh;
+  background-color:#2b4545;
+  margin-bottom: 2rem;
+
+}
+
+.parrafo-background{
+    display:inline-block;
+    width: 70%;
+    height: 60vh;
+    background-color:#d1d7d7;
+    background-image: url(/images/imagenhd.jpg);
+    background-position:center;
+    /* background-size: 250px 250px; */
+    /* background-size:cover; */
+    /* background-repeat:no-repeat; */
+    background-image: linear-gradient(rgba(127, 24, 24, 0.732),rgba(151, 134, 24, 0.851)),url(/images/imagenhd.jpg);
+}
+
+.container2{
+  width: 350px;
+  height: 350px;
+  background-color:blue;
+  background-image: url(/images/mazdacx9.jpg);
+  background-size: 220px 230px;
+  background-repeat: no-repeat;
+  object-fit:scale-down;
+
+}
+
+.imagen1{
+  width: 30%;
+  height: 50vh;
+  background-color:#c6cbb5;
+  object-fit: cover;
+}
+
+.imagen2{
+  width: 30%;
+  height: 50vh;
+  background-color:rgb(187, 206, 205);
+  object-fit:scale-down;
+}
+
+.imagen3{
+  width: 30%;
+  height: 50vh;
+  background-color:rgb(202, 187, 206);
+  object-fit:contain;
+}

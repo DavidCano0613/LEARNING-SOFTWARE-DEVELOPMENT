@@ -1,0 +1,19 @@
+{
+  "string":"Juan David",
+  "number":2000,
+  "bolean":true,
+  "array":["valor2","valor2","valor3"],
+  "object":{
+    "nickname":"JuanDa",
+    "age":22,
+    "linkedin":"JuanDaDev"
+  },
+  "null":null
+}
+
+
+
+
+
+
+

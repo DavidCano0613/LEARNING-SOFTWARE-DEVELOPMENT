@@ -1,0 +1,41 @@
+Como conseguir  empleo en remoto: 
+
+Habilidades y consejos
+-Ingles
+-Crear perfil linkedin, cursos de como mejorar perfil
+-Crear un curriculum moderno
+-Ver videos de como resolver entrevistas técnicas de 
+javascript, nodejs y go.
+
+
+Paginas
+-Arc.dev (usar sus herramientas)
+-Glassdoor (se pueden ver reviews de empresas) 
+-Toptal (pagan muy bien, pero se necesita mucho level)
+-Angel.co ()
+-Stack-Overflow
+-GitHub
+-indeed
+
+Freelances
+-Upwork
+-fiveer
+-workana
+
+
+-torre.co
+-Linkedln
+-Red de contactos
+
+Mejor estrategia para encontrar empleo como programador
+-No usar la técnica metralleta
+-Búsqueda
+-Estudiar sobre la empresa
+-Mini propuesta de valor: decir algo para mejorar
+-Buscar a la persona ceo o que trabaje en la parte TI 
+
+
+
+
+ 
+

@@ -1,0 +1,42 @@
+Diseño de bases de datos
+
+Es lo que se hace antes de crear o implementar como tal código sql, es decir es tener
+un diseño antes de saltar a crealar. 
+
+Se parte de las necesidades o descripción de requisitos, es decir, necesidades relativas a los 
+datos. 
+
+La primera etapa es la del diseño conceptual: Aquí se debe descubrir el significado de los datos
+y plasmarlo en un esquema con una notación estandar, como el modelo entidad-relación uno de 
+los esquemas conceptuales mas usados. 
+
+La segunda etapa es la del diseño lógico: Se transforma el esquema conceptual, se toma
+dicho esquema y se transforma en una diagrama de tablas que se ve mas ordenado. El objeto 
+es obtener un conjunto de tablas
+
+Diseño físico: En esta estapa lo que se hace es implementar lo anterior en un SGBD concreto
+
+En cada etapa del diseño se usa un lenguaje a los cuales se les denomina modelos. 
+
+
+https://www.youtube.com/watch?v=21q2XhbHmNc
+https://www.youtube.com/watch?v=AgRshwxqXuI
+https://www.youtube.com/watch?v=ffKWjT253ms
+file:///C:/Users/David/OneDrive/Escritorio/LEARNING%20PROGRAMMING/7.BASES%20DE%20DATOS/Teor%C3%ADa/MC_AA4_Diseno_conceptual_bases_datos.pdf
+file:///C:/Users/David/OneDrive/Escritorio/LEARNING%20PROGRAMMING/7.BASES%20DE%20DATOS/Teor%C3%ADa/MC_AA3_Normalizacion_bases_datos.pdf
+file:///C:/Users/David/OneDrive/Escritorio/LEARNING%20PROGRAMMING/7.BASES%20DE%20DATOS/Teor%C3%ADa/MC_AA3_Redundancia_duplicidad.pdf
+file:///C:/Users/David/OneDrive/Escritorio/LEARNING%20PROGRAMMING/7.BASES%20DE%20DATOS/Teor%C3%ADa/MF_AA3_Reglas_para_la_normalizacion_de_una_base_de_datos.pdf
+
+
+
+
+
+Errores de diseño en bases de datos : https://www.youtube.com/watch?v=hwaZ1f81g3k
+1. Guardar multiples valores en la misma columna. Al hacer eso se pierde la capacidad consulta y presenta problemas de normalización
+2. No crear las tablas lookup: Tablas pequeña para valores que no suelen cambiar mucho en el tiempo. 
+3. Nombres inconsistentes: Es un error a nivel de desarrollo, suele ser confunso. Se deberían usar nombres muy claros y bien organizados. 
+Es decir, que una alla un cambo o tabla que tenga prefijos, otro con todo mayuscula, otro con todo minuscula y así. 
+4. Guardar información calculable: Se puede calcular a nivel de la aplicación, Se puede usar objetos a nivel de la base de datos usando vistas o Triggers 
+5. No crear llaves foráneas: Se pierde el poder de las bases de datos relacionales.
+6. Falta de índices: Para acceder a los datos mas rapido
+7. Falta de llaves únicas: Ayuda a la integridad de los datos. 

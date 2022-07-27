@@ -1,0 +1,64 @@
+@use 'variables';
+
+
+
+
+//* 
+//& hace referencia al padre  
+.nav {
+    background-color: rgb(59, 157, 232);
+
+    &__container {
+        width: 70%;
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2em;
+    }
+
+    &__item {
+        color: white;
+        text-decoration: none;
+
+        &--active {
+            text-decoration: underline;
+        }
+
+        &:hover {
+            color: rgb(23, 12, 238);
+        }
+    }
+
+    @media(min-width:768px) {
+        &__container {
+            justify-content: flex-end;
+        }
+    }
+}
+
+
+//* 
+// .nav{
+//     background-color:variables.$color;
+//     ul{
+//         color:black;
+//         li{
+//             color:wheat;
+//         }
+//     }
+// }
+
+//*Interpolación 
+
+
+
+//*CONDICIONALES
+
+
+
+
+
+
+

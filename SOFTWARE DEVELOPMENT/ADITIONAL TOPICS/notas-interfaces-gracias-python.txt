@@ -1,0 +1,16 @@
+
+
+Estructura de una interfaz gráfica en Python
+
+1) Raiz: Es la ventana, es como el contenedor general de la interfaz gráfica, es lo primero que se debe construir 
+
+2) Frame: Se contruye dentro de la raiz como un organizador, dentro de este frame hay diferentes elementos los cuales se conocen como widgets. 
+
+3) Wigets 
+¿Qué son los label?
+Wigets utilizados para mostrar texto o imágenes
+Tienen como única finalidad mostrar texto, no se puede interactuar con él (borrar, arrastrar, etc)
+
+Sintaxis
+VariableLabel = Label(contenedor,opciones) Las opciones son demasiadas, revisar la documentación. 
+

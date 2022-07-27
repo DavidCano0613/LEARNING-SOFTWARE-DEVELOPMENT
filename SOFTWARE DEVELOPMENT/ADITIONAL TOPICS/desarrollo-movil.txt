@@ -1,0 +1,53 @@
+Lenguajes para desarrollo móvil. 
+
+Hay dos caminos para el desarrollo móvil.
+
+Desarrollo nativo
+Desarrollas para una plataforma en espesifico, por lo cual tu app no va funcionar en la otra plataforma
+estan, android y IOES. El rendimiento es mejor y la integración. 
+
+Las multiplataformas
+Funciona en ambos sistemas operativos, pero algunas funciones no estarán disponibles y
+habra que hacer algunos ajustes para que funcionen bien en ambos. 
+No pueden ser aplicaciones muy complejas
+El uso de la base de datos tampoco puede ser muy complejo
+
+
+Para desarrollo en Android 
+JAVA y Otra de Google. (Android studio)
+Adobe xd y figma para diseño.
+KOTLIN el requisito es que debe ser funcional con Java. 
+Corre en cualquier sistema operativo.
+
+IOES (Apple)
+Objetive C (Muy dificil)
+Swift (Mucho mejor) 
+Para compilarlas se necesita un Mac
+
+DART Y FLUTTER
+Creado por Google para el desarrollo web.
+
+C# de Microsoft y Xamarin
+
+Java Script con React Native o Ionic
+ 
+PWA
+Toman las tecnologias web y corren desde allí
+Apps que usan las tecnologias webs. 
+
+Como android esta para varios dispositivos es conveniente, 
+tener diferentes dispositivos para hacer pruebas.
+
+La licencia para subir aplicaciones se deben super a la tienda
+de aplicaciones y deben pagarse 25 USD
+
+IOES
+Se usara un ordenador Mac
+Xcode para desarrollar en todo el entorno de apple
+Figma 
+Adobe XD
+Iphones para desarrollar pruebas en tiempo real
+App store para la licencia 100 USD o 300 USD para APPLE
+
+
+ 

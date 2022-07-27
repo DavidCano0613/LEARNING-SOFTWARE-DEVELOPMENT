@@ -1,0 +1,44 @@
+Lógica de negocio ¿Cliente o Servidor? 
+-Ponla en el servidor. 
+https://www.youtube.com/watch?v=SPmbxvvT7Aw
+
+Esquema Cliente/Servidor
+-Cliente que emite solicitudes <> El servidor las responde
+
+Capas lógicas que normalmente tiene una app
+-Presentación
+Tiene la responsabilidad de interacutar con el usuario
+-Aplicaciones web
+-Aplicaciones moviles
+-Aplicaciones de escritorio
+-Consola
+Presantación en el servidor
+-Servicios web
+-APIs
+
+-Dominio
+
+-Acceso a datos
+Generalmente esta en el servidor.
+
+Es mejor la lógica del negocio en el servidor. 
+-Facilidad de mantenimiento. 
+-Facilidad de distribuir cambios.
+-Reutilización de la lógica.
+-Proteger recursos importantes. 
+-Ambiente más controlado. 
+
+¿Qué debería ir en el cliente?
+-Lógica de presentación. 
+-Validaciones de entrada de datos.
+-Pasar solicitudes del usuario a las capas inferiores.
+¿Cuándo usar este enfoque?
+-Aplicaciones en modo desconectado.
+-Aplicaciones muy sencillas. 
+
+
+
+
+
+
+

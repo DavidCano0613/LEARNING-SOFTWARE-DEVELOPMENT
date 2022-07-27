@@ -1,0 +1,26 @@
+Recursos pars CSS:
+
+Fuentes de texto
+https://fonts.google.com/
+
+Iconos
+https://svgporn.com/
+https://boxicons.com/?query=twitter
+https://norfipc.com/redes-sociales/colores-redes-sociales-marcas-sitios-internet.php
+
+
+Imagenes
+https://unsplash.com/es/fotos/KIPqvvTOC1s
+
+Colores y fondos
+https://cssgradient.io/gradient-backgrounds/
+https://webgradients.com/
+https://htmlcolorcodes.com/es/
+color picker en el buscador
+
+Efectos y formas visuales
+https://getwaves.io/
+
+
+https://cdnjs.com/libraries/hamburgers
+https://jonsuh.com/hamburgers/

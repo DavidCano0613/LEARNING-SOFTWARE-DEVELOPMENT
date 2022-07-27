@@ -1,0 +1,13 @@
+Malas practicas
+
+Datos magicos: Datos que salen de la nada, siempre que sea claro de donde salen los datos. 
+
+Funciones y variables poco expresivas:
+x = juan david, name = juan david
+atri= () =>{}, setAttribute =()=>
+
+Funciones que hacen de todo - Usar el principio de responsabilidad unica
+Funciones con muchos parametros: 
+Funciones sin tipos espesifico: Las funciones deberian retornan un solo tipo de valor. 
+Anidaciones muy largas, tanto en ciclos, callbacks, condicionales. 
+Nombres en varios idiomas: Solo un idioma

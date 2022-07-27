@@ -1,0 +1,61 @@
+*{
+ box-sizing: border-box; 
+ margin:0;
+ padding:0;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background-color:rgb(196, 142, 127);
+  height: 1200px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card{
+  width: 330px;
+  min-height: 500px;
+  background-color:white;
+  /* margin:0 auto; */
+  margin-top:70px;
+  border-radius:12px;
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: .1px;
+}
+
+.card__person{
+  width: 120px;
+  height: 120px;
+  margin:auto;
+  margin-top:105px;
+  border-radius:50%;
+  border: 7px solid white;
+  background-image: url(../../images/mazdacx9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__name{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card__position{
+  font-size: 12px;
+  padding: 10px;
+}
+
+.card__cta{
+  background-color:rgb(88, 88, 105);
+  padding: 20px 20px;
+  display: inline-block;
+  color:white;
+  text-decoration: none;
+  border-radius:inherit;
+}

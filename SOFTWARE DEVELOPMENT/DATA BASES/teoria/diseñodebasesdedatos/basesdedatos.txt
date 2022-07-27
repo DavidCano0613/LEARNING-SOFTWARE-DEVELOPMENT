@@ -1,0 +1,39 @@
+Notas para bases de datos: 
+
+1) Elegir el motor de base de datos correctos, según el uso que vaya tener la base de datos. 
+2) Escalabilidad
+-Estar preparado para el aumento de concurrencia y el numero de clientes. 
+*Escalamiento vertical
+*Escalamiento horizontal
+*Sharding 
+-Cuidado con desarrollar y testear con bases pequeñas, testear en un ambiente lo mas parecido a producción.
+-Las queries no enlentencen linealmemente. (que son queries)
+3) Tiempos de latencia 
+4) Elegir el data type correcto. 
+-Elegir uno más grande aumentará tamaño en disco 
+Char(argentina,colombia) = 9 bytes
+Enum(argentina,colombia) ? 1 byte
+5) Character set 
+6) Indices
+7) Queries auto-generadas
+8) Niveles de aislamiento 
+9) Seguridad en la DB
+- Cómo se guarda la info?
+- Como es el acceso a la BD=
+- "Deslogueo" automatico
+- Pedir password para realizar cambios 
+10) Lo nuevo no siempre es mas rapido mejor
+-Migrar a versionas recientes
+*Requiere tiempo
+*Pueden ser mas inestabes
+*Pueden ser mas lentas 
+
+
+Conclusiones
+-Hay que utilizarla herramienta y versión correcta según las necesidad.
+-Pueden y van a existir problemas d eperformance a medida que aumenten clientes y la concurrencias. 
+Hay varias maneras de atacar ese problema.
+-Super importante testear cambios en un escenario real, antes de ir a producción. 
+
+Seguir consultando en:
+Percona.com/blog

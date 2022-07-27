@@ -1,0 +1,19 @@
+¿Como elegir un metodo?
+
+la decisión de que metodo de ordenamiento implementar en nuestros programas dependera de los siguientes factores
+
+1)La cantidad de datos a ordenar
+2)Que tan desordenados estan
+3)Que tan rapido se debe ordenar 
+
+Los mas popualares son:
+Burbuja
+Insercción
+Seleccion 
+Mezcla
+Shellsort
+1uicksort
+
+Cada uno de ellos tiene una formula para conocer su nivel de complejidad, la cual se mide por la 
+cantidad de operaciones que se deben realizar para lograr ordernar un conjunto de datos.
+

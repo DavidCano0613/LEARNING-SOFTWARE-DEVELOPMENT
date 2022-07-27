@@ -1,0 +1,111 @@
+RUTA DESARROLLADOR BACK-END 2022
+
+1) SISTEMAS OPERATIVOS 
+-Como funcionan los sistemas operativos en general
+-Como se gestionan los archivos en el sistema operativo
+-Como funcionan los programas y procesos 
+-Hilos de procesos 
+-Entendimiento de como funcionna y se maneja la memoria en un programa.
+-Comunicación entre procesos (Multiples programas que corren en el pc)
+-Manejo de IO (Gestión del disco ssd)
+-POXIS (Compatibilidad entre diferentes sistemas operativos)
+-Concurrencia
+-Como funciona el internet 
+-Como funcionan los navegadores
+-URL
+-DOMINIOS
+-HOISTING 
+
+2) Terminal
+-Que es 
+-Como se usa
+-Comandos basicos
+-Comandos avanzados (Grep/ssh/find)
+
+
+3) REDES
+-Direcciones IP 
+-Routers
+-Protocolos HTTP y HTTPS
+-Redes virtuales dentro de un computador
+-Puertos en el pc y como se usan (https 443 por ejemplo)
+
+4) Servidores
+-Que son
+-Como funciona su hardware
+-Tipos de servidores
+
+
+5) Lenguajes de programación
+Html-CSS-JavaScript De forma básica
+JavaScript - NodeJS - ExpressJS
+Python - Django
+Go
+
+
+
+6) BASES DE DATOS
+-Teoría 
+-Problema de N+1
+-Teorema de CAP
+-Indices para ser mas eficiente
+
+Bases de datos SQL
+-Lenguaje SQL
+-MySQL
+-PostgreSQL
+
+Bases de datos NoSQL
+-Teoría NoSQL
+-MongoDB
+
+7) Sistemas de control de versiones
+-GIT
+-GITHUB
+-GITLAB
+
+
+8) APIs
+-Que son
+-Tipos de apis
+-Hateoas/Rest
+-Documentación de apis (SWAGGER/POSTMAN)
+
+9) Seguridad
+-Autenticación/Autorización
+-Algoritmos de hashing (SHA/MD5/BCRYPT/SALTS/SSL/CORS)
+-Principios de seguridad/OWASP
+
+10) Arquitectura de software
+-Que es 
+-Estudiar los patrones de arquitectura
+-Monoliticas
+-Microservicios
+-Serverless
+
+11) CONTENEDORES
+-DOCKER 
+
+12) GRAPHQL
+
+12) Pruebas de software
+
+13) Integración continua 
+-Jenkins
+
+14) Elasticsearch (Motores de busqueda)
+
+15) Messagebrokers como Kafka
+
+15)Despligue de apps
+CDNS REDIS MEMCHASH
+Escalamiento vertical y horizontal
+Estrategias de migración de datos
+Tecnicas con muchos usuarios = circuit breaker
+
+17) Cloud = AWS / GOOGLE CLOUD
+Loogly
+
+
+
+

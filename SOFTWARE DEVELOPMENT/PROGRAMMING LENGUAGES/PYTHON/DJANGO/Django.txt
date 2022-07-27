@@ -1,0 +1,61 @@
+Un framework es un marco de trabajo formado por un conjunto de herramientas, librerías y buenas prácticas.
+
+Para que sirve Django
+
+Para crear sitios web (complejos) de forma rapida y sencilla
+Hay tareas que son repetitivas, pesadas y comunes en el momento de crear diferentes sitios web. Djanggo viene a facilitar la realización de estas tareas.
+
+Hay código que podemos reutilizar de un sitio web a otro. Django permite la reutilización de forma sencilla.
+
+Modelo vista controlador
+Es un patron de diseño de sistemas basado en crear programas con 3 estructuras basicas, es decir, dividir una aplicación en 3 grandes modulos, en Django se usa este patrón petro con otro nombre, sim embargo es practicamente lo mismo y este se llama Model Template View
+
+Vista
+Controlador
+Modelo
+
+Instalación en local
+-Una única versión de Django
+-Una única versión de Python
+-Mismas dependencia para todos los proyectos
+
+Instalación Virtual
+-Varias versiones de Django
+-Varias de veriones de Python
+-Diferentes dependencias para todos los proyectos
+-Igular entornos de desarrollo-pruebas-producción.
+
+Django y BBDD
+Soportadas oficialmente:
+-SQLite3
+-PostgreSQL: Gestor recomendado
+-MySql
+-Oracle
+
+Con conectores ofrecidos por terceros:
+-SQL Server
+-SAP SQL
+-DB2
+-Firebird
+-Etc
+
+django-admin startproject Nombre del proyecto
+
+Archivos que se crean por defecto al crear un proyecto en Django 
+
+manage.py 
+Es un archivo muy importante es una utilidad de linea de comandos que permite interactuar con los proyoctos Dango. manage.py help mostrara todos los comandos disponibles de lo que ese archivo puede hacer. 
+
+init.py Tratara al directorio como un paquete 
+
+settings.py Contiene todas las configuraciones del proyecto de Django
+
+urls.py Es donde se almacenan las URLS que va a usar el proyecto
+
+wsgi.py Servidor web
+
+Creación de primera página 
+
+Archivo de las vista Views
+
+

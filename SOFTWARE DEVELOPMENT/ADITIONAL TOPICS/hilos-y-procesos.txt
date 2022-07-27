@@ -1,0 +1,49 @@
+PROCESOS E HILOS
+
+
+proceso
+es cuando el código de alto nivel ya esta compilado o esta en bajo nivel o sea en binario y se manda o se corre ya
+en el procesador. El sistema operativo asigna los recursos a los procesos y estan separados de otros procesos. Cada proceso
+tiene su espacio en memoria.
+
+Hilo (thread)
+Un proceso puede crear múltiples hilos
+Es la secuencia de instrucciones más elemental que puede ser manejada por el planificador del S.O para ser ejecutadas..
+Los hilos de un mismo proceso comparten ciertos recursos o contexto y tienen otros recursos propios. 
+
+Un proceso puede crear otros procesos, en este caso existe una relación de padre a hijos, los procesos hijos son independientes entre sí, pero pueden compartir recursos con el padre. 
+-En C se utiliza la llamada al sistema fork() 
+
+Un procesos puede crear varios hilos, estos compatirán cierto contexto y recursos con el proceso que los creó y por lo tanto entre ellos.
+
+Al inicio los CPU solamente tenian un nucleo, solo podian ejecutar un hilo a la vez, solo que este va saltando de uno a otro de forma super rapida y da la ilusión de ejecutarlos a la vez
+
+El So ejecuta hilos, y es el encargado de organizarlos utilizando una cola con prioridades. A cada hilo le asigna un numero para darles prioridad y le da mas recursos o tiempo a el hilo que esta ejecutando la tarea con mas prioridad.
+
+Si se tienen varios nucleos, entonces existe el verdadero paralelismo, es decir se puede ejecutar varios hilos a la vez. 
+
+Porque aprende sobre procesos e hilos? 
+
+-Para poder crear aplicación con programación concurrente, algunos problemas se resuelven mejor de esta manera y se pueden 
+crear sistemas que aprovechen mejor los recursos. 
+
+-Utilizando programación paralela se pueden aprovechar mejor los recursos del sistema y los procesadores más modernos. 
+
+
+
+
+
+
+
+CONCURRENCIA Y PARALELISMO
+
+secuencial
+paralelo
+el tiempo total de ejecución es el ultimo hilo o el que dure mas ejecutandose
+
+
+Concurrencia
+Se habla de concurrencia cuando hay una existencia simultanea de varios procesos o hilos de procesos 
+ojo, existencia simultanea no implica ejecucion simultanea.
+
+Lo que hace la concurrencia es cambiar de hilo en hilo de forma rapida. va pasando procesos a la memoria y los va tomando de uno en uno

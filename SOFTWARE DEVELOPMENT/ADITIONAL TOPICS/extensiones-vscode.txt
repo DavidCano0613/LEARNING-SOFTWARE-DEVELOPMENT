@@ -1,0 +1,37 @@
+LISTA DE EXTENSIONES PARA VISUAL STUDIO CODE: 
+
+AutoCloseTag
+Deprecated Bracked Pair
+Autocompletetag
+Autoimport
+Autorenametag
+Bettercommets
+Coderunner
+ES7 React
+ESlint
+Git Graph 
+GitHub Pull Request
+GitLens
+HTML previw
+html tag wrapper
+import cost
+indent-rainbow
+JavaScript codes snippets
+Javascript and TypScript 
+Jupyter
+Live share
+LiveServer
+Material Icon theme
+MySql
+MySQL Syntax
+mysql-inline-decorator
+Open in browser
+PolaCode
+Prettier 
+Python
+Python Indent
+Rainbow Brackets
+Remote ssh
+Simple React Snippets
+Vs Intellicode
+vscode-icons

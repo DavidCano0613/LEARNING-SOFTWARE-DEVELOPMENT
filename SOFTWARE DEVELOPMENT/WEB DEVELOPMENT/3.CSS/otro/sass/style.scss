@@ -1,0 +1,26 @@
+
+//Sass nos da las facultades de poder usar css como si este fuese un lenguaje de programación. Por lo cual, podemos establecer condicionales, ciclos entre otro tipo de operaciones comunes en la programación. 
+
+// Sass nos permite modularizar el código esto se hace usando partials. Los partials no se compilan si no que estan a la espera de ser llamados desde una hora principal de sass.
+
+
+// VARIABLES EN SASS: Estas se usan para valores o estilos que se repiten varias veces a lo largo de un sitio web. 
+
+//*Declaracación de variables globales 
+$main-color:rgb(17, 13, 241);
+
+//*Asi es como se llama a los partials 
+
+@use 'navbar';
+@use 'reset';
+@use 'animaciones';
+
+
+
+h2{
+    color:$main-color;
+}
+
+p{
+    color:$main-color;
+}

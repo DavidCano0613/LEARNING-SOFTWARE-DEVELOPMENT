@@ -1,0 +1,68 @@
+Herramientas para desarrollo real.
+
+ID'S O EDITORES DE CODIGO
+-Visual studio code
+-Vim y Neovim
+-Android Studio 
+-Jet Brains
+-Code Server
+
+HERRAMIENTAS DE VERSIONAMIENTO VCS
+- Git y Github 
+- Git desktop
+- Gitea
+- Gogs 
+- Sourcetree
+
+SISTEMAS DE PERSISTENCIA
+-MySQL
+-PostgreSQL
+-MongoDB
+
+Navegadores
+- Google Chorme
+- Firefox
+
+Servicios Web y Serverless
+- Firebase
+- AWS Amplify
+
+Para Rest-Apis y Graph-ql
+-PostMan
+-Insomnia
+-Rest Claim
+
+Herramientas para Cloud
+-Amazon Web Services
+-Azure
+-Google Cloud
+
+Docker y Dockerhub
+
+Kubernetes
+
+
+CMS
+- WordPress
+- Ghost
+
+Frameworks de Backend
+- Go (Gorilla y Goji)
+- Python (Django y Flask)
+- TypeScrit (Next.JS y Loopback)
+
+Servidores
+-Nginx
+
+Para Desarrollo Movil multiplataforma
+- React Native con Expo 
+- Flutter 
+- Ionic
+
+Mejor Sistema operativo para desarrollo
+Linux y Macos
+
+
+
+
+

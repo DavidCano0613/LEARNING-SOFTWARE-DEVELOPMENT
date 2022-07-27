@@ -1,0 +1,53 @@
+Java
+Cómo programar en Java: 
+https://www-ebooks7-24-com.itm.elogim.com:2443/stage.aspx?il=&pg=&ed=
+
+Empezar a programar usando Java: 
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/57434
+
+Estructuras de datos en Java:
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/50117
+
+Python
+Criptografía sin secretos con Python: 
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/106497
+
+Hacking ético con herramientas Python:
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/106513
+
+Introducción práctica a la programación con Python: 
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/124259
+
+Big data con PYTHON: 
+https://www-alphaeditorialcloud-com.itm.elogim.com:2443/reader/big-data-con-python-1?location=10
+
+
+
+ALGORITMOS Y PROGRAMACIÓN
+
+Algoritmos y estructuras de datos (2a. ed.): 
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/175249
+
+
+Lógica de programación orientada a objetos: 
+https://elibro-net.itm.elogim.com:2443/es/ereader/bibliotecaitm/70431
+
+
+Grafos: fundamentos y algoritmos: 
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/68438
+
+BASES DE DATOS
+
+Programación de bases de datos relacionales:
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/106525
+
+PROGRAMACIÓN WEB
+
+Programación web en el entorno servidor: 
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/106487
+
+Programación web en el entorno cliente: 
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/106486
+
+Programación web en java:
+https://elibro-net.itm.elogim.com:2443/es/lc/bibliotecaitm/titulos/49347

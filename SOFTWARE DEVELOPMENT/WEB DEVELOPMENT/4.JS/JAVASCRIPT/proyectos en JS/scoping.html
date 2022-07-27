@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Function scope example</title>
+</head>
+<body>
+
+  <script>
+    const x = 1;
+
+    function a() {
+      const y = 2;
+      output(y);
+    }
+
+    function b() {
+      const z = 3;
+      output(z);
+    }
+
+    function output(value) {
+      const para = document.createElement('p');
+      document.body.appendChild(para);
+      para.textContent = `Value: ${value}`;
+    }
+
+// Wrong way
+
+  function myBigFunction() {
+  const myValue;
+
+  subFunction1();
+  subFunction2();
+  subFunction3();
+}
+
+function subFunction1() {
+  console.log(myValue);
+}
+
+function subFunction2() {
+  console.log(myValue);
+}
+
+function subFunction3() {
+  console.log(myValue);
+}
+
+// Right way
+
+function myBigFunction() {
+  const myValue = 1;
+
+  subFunction1(myValue);
+  subFunction2(myValue);
+  subFunction3(myValue);
+}
+
+function subFunction1(value) {
+  console.log(value);
+}
+
+function subFunction2(value) {
+  console.log(value);
+}
+
+function subFunction3(value) {
+  console.log(value);
+}
+
+
+  </script>
+</body>
+</html>

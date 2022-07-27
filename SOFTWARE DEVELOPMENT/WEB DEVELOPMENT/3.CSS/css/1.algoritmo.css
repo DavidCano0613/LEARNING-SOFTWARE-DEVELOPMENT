@@ -1,0 +1,141 @@
+
+/* 1) Selectores */
+
+/* 1.1)Selector universal*/
+/* *{
+     color: tomato;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+ 
+/* 1.2)Selector por etiqueta*/
+/* h1{
+    color:aqua;
+} */
+
+
+/* 1.3)Selector por clases*/
+/* .claseh1{
+    color:blue
+} */
+
+/* 1.4)Selector por atributos */
+/* [atributoh1]{
+    color:brown
+} */
+
+/* 1.5)Selector por id */
+/* #iddelh1{
+    color:yellow;
+} */
+
+/* 1.5) Selector de hijo directos y descendientes*/
+
+/* Directos */
+
+/* .directos > li {
+    background-color: chartreuse;
+} */
+
+
+/* 1.6) Descendientes */
+/* .descendientes li {
+    background-color: rgb(60, 0, 255);
+}  */
+
+
+
+/* 1.7) Selector por hermanos */
+
+/* Hermanos en general */
+/* .parrafo-clase ~ p {
+    background-color: beige;
+} */
+
+/* Hermanos adyacente*/
+/* .parrafo-clase + p {
+    background-color: rgb(46, 78, 185);
+}  */
+
+/* Selector corrido */
+/* En la medida de lo posible no usarlo */
+/* h1#iddelh1.tituloh1[data-attribute="atributoh1"]{
+    background-color: rgb(126, 126, 182);
+} */
+
+/* Agrupación de selectores */
+/* Consiste en seleccionar varios elementos y separarlos con coma y aplicarle los mismo
+estilos a esos elementos */
+/* .agrupacion1,
+.agrupacion2{
+    background-color: blueviolet;
+} */
+
+/* #iddelh1,
+.parrafo-clase,
+.directos > li,
+.cita-socrates,
+[footer="atributo"]{
+    background-color:aquamarine;
+    display: inline;
+} */
+
+/* Algoritmo de css */
+/* Es la forma en la que el navegador va a aplicar los estilos css a los documentos html
+se divide en tres caracteristicas:
+1. La cáscada
+2. La especificidad
+3. La herencia
+*/
+
+/* Cascada */
+
+/* h1{
+    background-color:yellow;
+}
+h1{
+    background-color:rgb(161, 161, 34);
+}
+h1{
+    background-color:rgb(113, 113, 9);
+}
+h1{
+    background-color:rgb(132, 132, 68);
+} */
+
+/* Especificidad */
+
+
+/* h1{
+    background-color:azure;
+} */
+
+/* #iddelh1{
+    background-color:rgb(125, 86, 62);
+} */
+
+/* .claseh1{
+    background-color:rgb(4, 32, 32);
+} */
+
+/* [data-attribute="atributoh1"]{
+    background-color:rgb(248, 56, 190);
+} */
+
+/* Herencia */
+/* En css existen propiedades que se heredan algunas por defecto como en los titulos y otras que el desarrollador debe poner a heredar manualmente */
+/* 
+
+.cita-socrates{
+    font-size: 4em;
+    background-color:blue;
+    padding: 30px;
+    border-radius: 15px;
+} */
+
+/* .cita-socrates > cite{
+    font-size: initial;
+    background-color:rgb(217, 255, 0);
+    padding: inherit;
+    border-radius: initial;
+} */

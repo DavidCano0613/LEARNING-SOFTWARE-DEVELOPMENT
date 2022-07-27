@@ -1,0 +1,62 @@
+Libreria y framework 
+
+Ayuda a simplificar el trabajo, hay que saber cuando aplicar una u otra. 
+
+Libreria
+Es un conjunto de código, funciones que otro desarrollador creo y lo guardo, basicamente son puras funciones
+que hacen determinadas cosas, las librerias se crean porque hay código que quizas se puede reutilizar en otros proyectos,
+entonces basicamente las librerias ayudan a ahorrar el tener que escribir mas codigo. 
+
+Framework
+Es basicamente un conjunto de librerias, un marco de trabajo es un conjunto de archivos que ya permite tener una estructura
+espesifica. 
+
+Cual usar
+La diferencia radica en el control
+-Usar una libreria cuando uno cree que tiene el criterio o la idea de que debe hacer y por ende
+se tiene el control de lo que se va hacer. 
+-El control recae sobre el framework, se debe adaptar a la estructura del framework
+
+Scrum
+Es una metodológias ágiles más populares y usadas en proyectos de software 
+Una metodologia agil es una forma de trabajar que abraza el cambio, se busca ser muy flexible con el cambio sin sacrificar la estabilidad del proyecto, es decir
+se busca que se pueda adaptar rapido a los cambios que surgan en el proyecto. 
+
+
+Scrum es flexible se puede aplicar de formas diferentes segun la necesidad
+
+Roles
+Se debe entender las funciones de los roles que hay en un equipo
+1. Product Owner
+Es el contacto entre el equipo de desarrollo y el cliente, es decir
+es el ingeniero o analista de requisitos del sistema, esta persona conoce de primera mano 
+exactamente lo que necesita la empresa, el tiene la capacidad de decir que se puede y no hacer, 
+priorisa tareas y toma decisiones para optimizar el desarrollo del proyecto y entregar algo rapido
+y funcional. No necesariamente sabe scrum
+
+Scrum master
+Es un experto en scrum y su funcion es asegurar que el equipo de desarrollo si este siguiente 
+la metologia, es decir vigila o da la guia e indica de como se deberia trabajar usando scrum. Esta persona
+hace reuniones y revisa como va todo. 
+
+Development team
+Aquí estan los desarrolladores, todos los involucrados en desarrollar el producto, 
+programadores front y back, diseñadores web, programadores moviles, testers, etc...
+
+Customers 
+Son los que toman las decisiones en la empresa, son clientes internos, equipos de marketing, ventas, administrativos, contables. 
+
+User
+Este ya es el cliente en sí, es decir la persona que va pagar por el producto y lo va a usar. 
+
+Backlog 
+Una lista de tareas, consiste en el conjunto de todos los  requisitos que debe tener el sistema. Al
+ser el backlog algo tan grande, se debe dividir en algo llamado historias de usuario, estas son: las funcionalidades.
+
+Sprint 
+Las funcionalidades se entregan por tiempos definidos, estos tiempos se llaman sprints, generalmente son de dos semanas
+y tienen como objetivo entregar algo funcional en el tiempo definido, ese es el proposito de scrum, definir en cada sprint
+cuanto tiempo se va tardar en desarollar esa funcionalidad que va poder ser utilizable. En cada reunión se trata de identificar
+puntos en los que se esten "parados" por decirlo de alguno manera. 
+
+

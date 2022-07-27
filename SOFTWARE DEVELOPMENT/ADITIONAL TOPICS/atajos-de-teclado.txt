@@ -1,0 +1,49 @@
+Atajos de escritorio 
+
+Windows + control + D = Crear un nuevo escritorio
+
+Windows + M = Minimizar todas las ventanas
+
+Windows + flecha: Posicionar una ventana
+
+Windows + tab: Cambiar de escritorio
+
+ALT + TAB
+
+CONTROL + MAYUS + ESC = Administrador de tareas y detiene aplicaciones.
+
+WINDOWS + E = Explorador de archivos
+
+Windows con tecla + o - = Lupa 
+
+Windows + impant = Captura de pantalla 
+
+Windows + A = Centro de aplicaciones
+
+Windows + I = Accede a la configuración
+
+Windows + C = Para hablar con cortana 
+
+Windows + G = Barra de juegos 
+
+Windows + L = Para bloquear pantalla 
+
+Windows + Alt + D = Calenadrio 
+
+Windows + K = Buscar dispositivos 
+
+Windows + P = Project
+
+Windows + R = Run
+
+WindoWs + S = Lupita
+
+Windows + . = Emojis 
+
+
+
+
+
+
+
+

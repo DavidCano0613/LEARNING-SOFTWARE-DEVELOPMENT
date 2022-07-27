@@ -1,0 +1,58 @@
+Más alla  de html, css y javascript 
+
+Como funciona la web ? 
+
+Lo primero que usamos es un navegador: Es un software que permite visitar sitios web. E lnavegador
+nos permite ingresar una dirección en una barra de direcciones que tiene el navegador, al hacer esto el navegador
+hace una petición o un request. Estos requets los responde un servidor que esta en otro lugar del mundo,
+donde estan almacenados los archivos que construyen ese sitio por así decirlo. Todo se basa
+en peticiones y respuestas o lo que se conoce como cliente-servidor. El servidor sirve cosas, no
+solo archivos html css y js. Si no también, imagenes, documentos, musica, videos etc...
+
+La web va más alla de html css y js. Hay cosas como http, request, response, el como viaja 
+lo que se pide en el cliente-servidor tiene que ver con: REDES. 
+
+
+Un concepto bastante importante es como un usuario se siente a gusto con un diseño, es decir, el
+usuario sabe que puede y tiene que hacer, este concepto tiene que ver con diseño UX o experiencia
+de usuario. Es como se siente el usuario no solo en terminos de como ve el sitio si no de que tan
+facil y practico es para el usuario interactuar con el sitio web, de esto se encargan unas personas
+que llamadas diseñadores UX/UI. 
+
+Google o los navegadores son los que posicionan las paginas web en los buscadores y esto lo hace
+dependiendo de que tan bien esta escrito tu documento html. Esto se conoce como SEO.  
+
+Con css se puede profundizar en frameworks de css y es recomendable saber cual es el mejor para usar. 
+También estan los preprocesadores CSS como Sass. 
+
+Ahora se debe entender la parte del BACK-END: Es lo que responde, generalmente es como una
+especia de parte invisible para el desarrollador front-end. El fron sin el back no puede funcionar y 
+viceversa, son complementarios. Dependen uno del otro. 
+
+El servidor es una maquina de computo como cualquier otra pero lo general con una gran capacidad para
+poder dar respuestas a muchos clientes. Este hadware a su vez tiene un software el cual se conoce
+como server o igualmente servidor. Este es el que se encarga de usar esos recursos de computo
+potentes y de respuestas. El servidor se puede programar. Ahí entran los lenguajes de programación 
+back-end. Estos nos permiten programar el como el servidor va a responder. Es decir con 
+los lenguajes del back creamos el software que se va ejecutar en el servidor, aquí se define 
+la logica de que va a hacer ese servidor. Los datos que procesa el servidor se van a una base de
+datos. Las bases de datos son otro componente fundamental, el saber como se almacen y sobre
+todo el como se pueden administrar grandes cantidades de datos es muy importante. 
+
+Algo más a saber es sobre sistemas operativos, para la web, es mucho mejor usar sistemas operativos
+basados en UNIX como Linux. Linux es más enfocado al desarrollo. Es decir la gran mayoria de
+servidores en el mundo usan el sistema operativo LINUX. Adimistradores de sistemas son
+los que manejan estos sistemas operativos en los servidores. 
+
+En las empresas usan una especia de metodologías, es decir, una forma de hacer las cosas, aquí
+entra el concepto de DEVOPS. Son una serie de practicas de como hacer las cosas más eficientemente. 
+
+Una vez se conozca bien de html css y js se puede abundar en temas como: 
+Lenguaje de programación backend como node js, php o python. Lenguajes de scripting.
+
+Bases de datos
+
+APIS
+
+HTTP
+

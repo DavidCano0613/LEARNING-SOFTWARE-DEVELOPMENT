@@ -1,0 +1,172 @@
+TC39
+ECMASCRIPT 
+JAVASCRIPT
+
+JAVASCRIPT TIENE TIPOS JS ES DINAMICAMENTE TIPADO
+
+AHEAD OF TIME: Primero se compila y luego se ejecuta, se dice que tipos de datos van a ver cuanto espacio van a tener, es decir se le da al compilador información de que va hacer
+JUST IN TIME: Compila y ejecuta a la vez. 
+
+
+SISTEMAS DE TIPOS DE DATOS:
+Son las reglas que impone un lenguaje de programación para clasificar qué tipos de valores existen, cómo se pueden manipularlos y cuáles son las operaciones válidas para realizar con ellos y cuales  no. 
+
+
+1.Chequeo de tipos: 
+Es el proceso de verficiar y hacer cumplir las restricciones de tipos que existen en un lenguaje, basciamente consiste en verificar que si una variable o un metodo se definen con un tipo de dato este no se pueda cabiar
+
+-Chequeo estático de tipos: Se hace antes de ejecutar el programa, tienen la ventaja de que funcionan como una especie de escudo antes de que el código se ejecute, atrapa bugs antes de ejecutar el programa. El código se compila antes de ser ejecutado
+
+-Chequeo dinamico de tipos: Se hace durante la ejecución del programa. Las variables pueden contener valores de diferentes tipos más adelante en la ejecución del ese código. El motor de JS va ejecutando cada linea de código en tiempo real o sobre la marcha, si se encuentra un error de tipos se detiene la ejecución del programa. 
+
+La diferencia de estos dos tipos de chequeo raidca en si esta se hace antes de que se ejecute el programa o durante la ejecución del mismo. 
+
+
+2.Exigencia de tipos: 
+Qué tan exigente es un lenguaje para considerar que estamos cometiendo un error de tipos. Esto tiene un rango de exigencia, por ejemplo python es mas exigente que php pero no tanto como java o c# por ejemplo. Funciona como en volumen su exigencia puede ser mas fuerte o mas debil. 
+
+Conversión de tipos: 
+Javascript en ciertas ocasiones va convertir por nosotros ciertos datos cuando los estamos operando. 
+
+Coerción de tipos: 
+Es la conversión implícita de tipos que realiza el motor de JS para poder concretar una operación. 
+
+Conversión explicita de tipos: Cuando nosotros mismos los convertimos con funciones como String() Number() Boolean()
+
+IEE 754 
+Fromato para representar numeros en js cada numero cupada 64 bits en la memoria llllllllllkol 
+
+Equivalencia y compatibilidad de tipos: Cómo un lenguaje determina que tipo es compatible con otro tipo o equivalente a otro tipo. 
+ 
+Tipado nominal
+Tipado estructural
+
+let user  = { name: "david"}
+!!user
+
+' '.lenght 
+toString 
+ + " " 
+
+0 === -0 
+
+0.1 + 0.3 
++(0.1 + 0.3).toFixed(2)
+
+Number.isSafeInteger
+Number.MAX_VALUE
+Number.MIN_VALUE
+Infinity 
+-Inifinity 
+isFinite()
+
+!!
+
+SYMBOL 
+Se usa para crear valores unicos, irrepetibles como las huellas digitales por ejemplo, para crearlo se debe llamar a la función symbol
+
+En los datos primitivos podemos acceder a valores y metodos al igual que en lo sobjetos debido a que el motot de js crea uno de estos objetos temporalmente para poder acceder a propiedades a metodos, este objeto se  llama  wrapper es un objeto que envuelve a un valor primitivo cuando queremos acceder a una prpiedad o llamar a un metodo del mismo. 
+
+
+SCOPE 
+Definición
+Cuando hacemos referencia a una variable js va buscar esta en el enterno mas cerca he irda buscando en entornos mas lejanos si no la encuentra. El Scope es lo que le da significado a las variables y ademas determina el conjunto de variables que podemos acceder desde una linea de código. Declarar con var let y const tiene diferentes implicaciones en el scope.  
+
+TIPOS DE SCOPE
+
+SCOPE VS CONTEXTO
+Contexto y contexto de ejecución: El contexto en js tiene que ver con el valor que tiene la variable this en algún momento de la ejecución. Cuál es el objto que está ejecutando una función y eso es lo que es el scope es el contexto de ejecución. 
+
+
+SCOPE GLOBAL
+Las variables globales puede ser accedidas desde cualquier lugar de nuestro programa, por ende, son variables declaradas fuera de toda función o bloque de código. Sin importar si las declaramos con var con let o con const 
+
+SCOPE LOCAL
+Las variables locales sólo se pueden acceder desde una parte de nuestro programa.
+
+-SCOPE DE FUNCIÓN: 
+Los parametros y las variables que se declaren dentro de una funcion solo pueden ser referenciados es decir solo se les puede manipular dentro de esta función y no por fuera de esta. Pero se pueden acceder a estas incluso si estan dentro de un bloque if o for, con que este en el cuerpo de la funcion es accecible. Las variables declaradas con var siempre van a tener un scope de función
+
+-SCOPE DE BLOQUE: 
+Un bloque de código es toda porción de código que esta encerrada entre llaves {} ya sea de un if un el un while o un for. Cuando se declara con let las variables no pueden ser accedidas por fuera de ese bloque. Aquí se aplican las que se declaran con let y const.
+
+Como buena practica de programación se deben declarar las variables con el scope más reducido posible. Además las variables globales van a estar la memoria todo el tiempo, las variables locales no, solo durante la ejecución de la función o al bloque de código al que pertenece. 
+
+
+ 
+Scope en JS
+Cadenas de Scopes
+Herramientas del navegador para scope
+
+
+Paradigma funcional
+Mutaciones
+Es no modificar un valor, el valor original de una variable o un arreglo de mantiene como estaba, y apartir de una refencia en memroia se crea otra variable o array. 
+
+mutable
+const numero = 3
+numero *=2 
+
+inmutable
+const numero=3
+const numero2 = numero * 2 
+
+con guion bajo saltas parametros
+
+
+JAVASCRIPT ENGINE - V8
+Hay muchos motores de Js que se encergan de convertir el 
+
+Global envirioment: Entorno de ejecución en el navegador
+
+Global object: Es un objeto global que genera el navegador también conocido 
+como widnow
+
+
+Outer envirioment:
+
+Contexto de ejecución
+Lo corre en un stack de tareas y las va apilando a medida que van llegando
+
+Window: Es un objeto que es como la ventana del navegador y el navegador viene 
+con unas APIS integradas que permiten extender las funcionalidad de JS, window
+es un entorno global que esta listo en el navegador para manipular código JS
+
+Parser: Es cuando el motor de js empieza a buscar o parsear las keywords o palabras reservadas del lenguaje
+Profiler: Monitor
+Compiler: Lo compila y lo manda la computadora como Bytecode
+
+Memory Heap: Es el lugar donde se guardan los valores de las variables y las funciones en JS, cuando se ejecuta el código todas las variables y funciones van al memory head donde luego el callstack va apilarlas o mas bien donde las llama. Es como una estanteria donde se van guardando, esto no se guarda de forma lineal, JS lo hace en la forma que quiere. 
+
+
+CallStack: La pila de tareas es donde se apilan las tareas de la primera hasta la ultima, la primera que se mete es la del objeto global, luego se van apilando las tareas, la ultima tarea es la que sale FILO "first in last out"
+
+Garbage Collection: Limpia la memoria de los datos no utilizados para no sobrecargarla y seguir trabajando sin problemas.
+Mark and Sweep, cuando js mira el callstack para saber que no necesitamos o ya no llamamo más, lo marca (mark) y luego lo elimina (sweep) 
+
+Stack Overflow: Es cuando se sobrecarga el callstack por ende la ejecución del código se frena, esto pasa por ejemplo cuando se ejecuta un loop infinito. Basicamente esto se traduce como Desbordamiento de la pila de tareas. 
+
+Asincronia: JS por defecto corre una tarea a la vez lo cual es sicronia. 
+La asincronia es el proceso en cual JavaScript permite ejecutar tareas de forma asincrona sin para el flujo de ejecución. Esto es gracias a la Api del navegador Timeout. Esta API lo que hace es que el navegador ejecute de forma paralela lo que esta haciendo de forma asincrona para que se siga ejecutando lo que esta en el callstack, cuando el API navegador termina de trabajar se manda esa tarea al callback queue, es como una fila donde se guardan esas tareas que hace el timeout, el que s encarga de mandar las tareas que estan en el callback queue al navegador es el EVENT LOOP es un bucle de eventos que esta preguntando al callstack si no tiene nada que hacer para mandarle las tareas que estan apiladas en el callbackqueue.
+
+Taquería DeGranda presenta a:
+.
+🌮 - call stack : el taquero (órdenes rápidas)
+👨‍🍳 - web APIs : la cocina
+🌯 - callback queue : las órdenes preparadas
+💁‍♂️ - event loop : el mesero
+
+
+
+This es una variable que es de referencia window 
+
+Hoisting: Es el proceso que hacen los motores de JavaScript de mandar a ejecutar 
+o leer en primer lugar las funciones declardas y las variables declaradas con var. 
+
+
+
+RECURSOS:
+https://developer.mozilla.org/en-US/docs/Glossary/Parse
+https://astexplorer.net/
+
+

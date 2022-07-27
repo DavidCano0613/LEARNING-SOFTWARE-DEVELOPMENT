@@ -1,0 +1,40 @@
+Tamaño máximo recomendado para una imágen:
+
+70kb a 100KB Lo ideal 
+.
+Herramientas para optimizar imágenes:
+
+Tiny PNG: Comprime el tamaño de una imagen, para hacerla más ligera.
+
+Verefix: Elimina los metadatos de una imagen, para reducir su tamaño.
+
+Compressor.io Comprime sin perder calidad (mejor todavia Tinypng)
+Picresize Comprime y recorta el tamaño de la imagen
+Convertio convierte jpg, png a svg (esta pagina es muy buena puede convertir de todo a otros formatos es gratis, chequenla y comenten que les parecio )
+
+Saludos ✌🏻
+
+Para descargar imagenes
+Pexels
+Pixabay
+Freerange
+Realistic Shots
+PicJumbo
+Magdeleine
+Creativecommons
+Freejpg
+
+Compresores de imágenes:
+
+Optimizilla
+IloveIMG
+
+
+Optimizar nuestro sitio web con las imagenes o iframes, es colocando en la etiqueta img el atributo loading con el valor lazy.
+
+Atributo loading
+El atributo loading permite al navegador retrasar la carga de imáges y de iframes que están fuera de pantalla, hasta que el usuario haga scroll cerca de ellas. Éste atributo soporta 3 valores:
+
+lazy: Retrasa la carga de la imagen hasta que el usuario alcanza con el scroll una distancia calculada desde el viewport.
+eager: Carga la imagen inmediatamente, sin importar donde está situada o colocada en la pantalla. En resumen, no hace lazy-loading.
+auto: Implementa el comportamiento por defecto del navegador para la carga de las imágenes. En resumen, poner auto es lo mismo que no poner el atributo loading.

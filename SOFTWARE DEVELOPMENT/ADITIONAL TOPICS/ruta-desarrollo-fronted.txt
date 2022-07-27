@@ -1,0 +1,164 @@
+CUALES SON LOS ROLES DEL FRONT-END
+
+-Diseñar la interfaz del usuario (Diseñador UI)
+Es una persona que diseña lo que se va mostrar en la aplicación web
+generalmente esto lo hace el diseñador UI y este entiende que el usuario
+va interactuar con la app y por ende diseña muy bien la interfaz y el flujo 
+Diseña los flujos de usuario, las pantallas e interacciones
+en un programa de diseño (no escribe código simplemente diseña como se debe
+ver el sitio o la app web)
+
+-Maquetador
+Lleva el diseño a código HTML Y CSS, No se preocupa de la lógica, solo de la presentación.
+No es un rol menor ya que para hacer un buen codigo HTML Y CSS se deben tener buenos conocimientos.
+Debe escribir código HTML Y CSS que sea adaptable a todo tipo de dispositivos.
+
+-Programador Front-end 
+Generalmente es el que programa usando JavaScript con un Framework 
+como Angular y librerias como React. Con conocimientos muy solidos de Js
+luego saltan a los frameworks. Este se encarga de dar toda la interactividad
+al sitio web y hace toda la parte lógica del lado visual.
+ 
+RUTA PARA SER DESARROLLADOR FRONT-END
+
+HTML-5 (Avanzado)
+-Conocer las bases
+-Elementos vs etiquetas
+-Que atributos sirven a que etiquetas
+-Que elementos son en linea y cuales son en bloque
+-Cabeceras
+-HTML semantico
+-Formularios
+-Inputs
+-SEO
+-Imagenes
+-Tablas
+-Elementos estructurales
+-Html avanzado usando Java S 
+
+CSS (Avanzado)
+-Conocer las bases 
+-Selectores
+-Espesificidad
+-Box-model
+-Layouts
+-Positions
+-Overflow
+-Flexbox 
+-Grids
+-Responsive desing
+-Media queries
+-Transformaciones
+-Transiciones
+-Animaciones
+-Variables y funciones
+-Preprocesadores (Opcional)
+Como:
+Sass
+Less (Opcional)
+Stylus (Opcional)
+
+FRAMEWORK PARA CSS (Ver el video de Hola Mundo)
+-Bootstrap
+-Materialize
+-Bulma
+
+PATRONES DE CSS 
+-Bem
+-Atomic desing
+
+JavaScript
+-Conocer las bases
+-DOM (Como interpreta Js el Html)
+-Asincronismo (Fetch,Promesas,Ajax)
+-Ecmascript 2015+
+-Patrones de diseño
+-Context (this)
+-Closures
+-Scope
+-JS modular (imports/exports)
+-Web APIS del navegador
+-Web apis (AJAX O Fetch)
+
+OTRAS HERRAMIENTAS PARA JAVASCRIPT
+-TYPESCRIPT (Este lenguaje basado en JavaScript 
+su función principal es para el tipado de datos.)
+-PROPTYPES Funciona muy bien con React
+-IMMUTABLE.JS (LIBRERIAS) Para programación funcional (opcional)
+-PWAS (Mas para responsive desing)
+
+LA TERMINAL
+-COMO FUNCIONA LA COMUNICACIÓN CLIENTE-SERVIDOR.
+-Comandos basicos 
+-SSH (Sirve para comunicarse con un servidor)
+-HTTP
+-REST APIs (Comunicación de objetos)
+-CRUD
+-DNS (Un serivicio para tener el propio URL)
+-LINTERS
+
+VERSIONAMIENTO 
+-GIT Y GITHUB
+
+PACKAGE MANAGER 
+Nos permiten integrar funcionalidad de otros desarrolladores
+en nuestro proyecto.
+-NPM
+-YARN
+
+HERRAMIENTAS 
+-Webpack (Todo el codigo html y css lo comprime)
+-Eslint (Ayuda escribir codigo JS con reglas)
+-Rollup
+-Prettier (Ayuda a darle forma al codigo en VScode)
+
+FRAMEWORKS JAVASCRIPT
+Habilitar la reactividad. 
+-React/Redux 
+-Vue/Vuex
+-Angular/RXjs
+-Svelte
+(Elegir uno de estos)
+
+SEGURIDAD
+-Cetificados HTTPS 
+-CORS
+-Content Security Policy 
+
+TESTING
+-Jest
+-Cypress
+-Enzyme
+-React-Testing-LIB
+
+PWAS
+Es un paradigma para tener apps web que corren en el escritorio
+para tener la experiencia de una app nativa pero que es web.
+-Storage
+-Web sockets
+-Service Workers
+-Performance
+-Patron PRPL 
+
+SERVER-SIDE-RENDERING
+Para cargar el sitio web para renderizar y cargar.
+-Next.js- basada en React
+-Nuxt.Js- basada en Vue 
+
+STATIC SITE GENERATORS
+Apps que no requiere un back-end como tal
+-Next.Js
+-Gatsby
+-Jekyll
+-Hugo
+
+GRAPHQL/APOLLO
+Para temas de APIs
+-Api
+
+WEB ASSEMBLY
+Sirve para ejecutar scripts del lado del cliente
+ 
+NATIVAS (Para desarrollo nativo)
+-Electron-Desktop
+-React Native - Moviles 

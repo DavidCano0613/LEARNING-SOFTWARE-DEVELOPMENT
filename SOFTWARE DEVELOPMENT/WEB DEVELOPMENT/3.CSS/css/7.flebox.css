@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    
+}
+
+.container{
+    background-image: url('../images/ejes-de-coordenadas-o-cartesianos-1.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 800px;
+    margin: 80px auto;
+    border: 3px solid #000;
+    /* Flujo de flebox */
+    display: flex; 
+    flex-direction:column;
+
+    /**Alineación del main axis: Define la alineación de los elemtnos hijos, respecto del principal.*/ 
+
+    justify-content:space-around;
+
+
+    /**Alineación del cross axis: Define la alineación de los elemtnos hijos, respecto al eje secundario.*/
+
+    align-items:stretch;
+    align-items:center;
+
+    /**Strech solo funciona cuando los elementos hijos no tienen un width y un height definido.*/
+    
+
+}
+
+.element{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 100px;
+    width: 200px;
+    height: 150px;
+    /* flex-shrink:0; */
+}
+
+/* Propiedades de los hijos (ITEMS) */
+.element1{
+    background-color: crimson;
+    order:2;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+
+.element2{
+    background-color: rgb(0, 4, 255);
+    order:3;
+    /* flex-grow:2; */
+    /* flex-shrink: 2; */
+    /* align-self:flex-start; */
+
+}
+
+.element3{
+    background-color: rgb(255, 242, 0);
+    order:1;
+    /* flex-grow:3; */
+    /* flex-shrink: 3; */
+    /* align-self: flex-end; */
+}
+
+
