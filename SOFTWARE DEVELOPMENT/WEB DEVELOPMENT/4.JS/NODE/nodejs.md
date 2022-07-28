@@ -216,33 +216,67 @@ Son una herramienta que permiten agrupar rutas para así separar la lógica de l
 ## Midwalware
 
 
-## Autenticación y autorización
+---
+
+
+CREACÍON DE UN BACKEND CON NODE JS
+
+1) Configuración de entorno de etorno de desarrollo y de producción con buenas practicas:
+
+-Git ignore:
+
+-Configuración del editor de código: Es recomendable para que todos los desarrolladores tengan la misma configuración en su editor de código. Tener la extensión editorconfig. Se puede establecer una configuración que lo que haga se formatear el editor de código para que todos trabajen de la misma manera.
+
+-Linters:
+
+-Nodemon como servidor de desarrollo: Crear algunas tareas o scripts en el package json.
+
+-Instalación de paquetes: npm i nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier -D
+
+#==============================================
+
+2) Creacíon del servidor y routing:
+
+
+Una buena practica es que los endpoints sean en plural.
+
+Single Responsability Principle: Cada pieza de código debe tener una sola responsabilidad, aplica para código, archvios, clases, modulos, etc... Una función que suma no deberia también hacer integrales. Esto también aplica para los archivos de un proyecto. Todo el routing deberia dividirse en archivos que se encarguen de definir las rutas de cada endopoint en espesifico. El nombre que se le dan a estos archivos dependen del equipo de desarrollo.
+
+#==============================================
+
+Servicios: Es donde se pone la lógica del negocio como tal. Encapsular todos los casos de uso.
 
 
 
-## Hash
-Es un mecanismo que permite proteger contraseñas, este proceso consiste en tomar el texto plano de una clave pasarla por una función y generar clave llamada criptografica. Esa función evalua la clave en texto plano y si no es igual al hash que se creo por primera vez nunca va generar el mismo resultado. Ademas no hay forma de por medio de esta función pasar el hash al texto plano es decir solo se puede ir del texto plano al hash pero no se puede convertir el hash por decirlo así en el texto que lo creo. 
 
 
-(()=>{
-  // expressApp.get('/mi-cuenta/:idCuenta/',(req,res)=>{
-  //   console.log(req.params.idCuenta)
-  //   console.log(req.headers)
-  //   // console.log(req.get("Melainvente"))
-  //   console.log(req.body)
-  //   res.send("Petición recibida esto se responde en el GET")
-  //   // res.status(401).send({
-  //   //   errorMessage:"No autorizado"
-  //   // })
-  // })
-  // expressApp.post("/mi-cuenta", (req, res) => {
-  //   res.send("Esta es la respuesta de este endpoint para POST");
-  // });
-  // expressApp.put("/mi-cuenta", (req, res) => {
-  //   res.send("Esta es la respuesta de este endpoint para PUT");
-  // });
-  // expressApp.all("/mi-cuenta", (req, res) => {
-  //   res.send("Esta es la respuesta de este endpoint para TODOS");
-  // });
-})
 
+#==============================================
+Recursos:
+
+¿Qué es el archivo .gitignore?
+https://www.freecodecamp.org/espanol/news/gitignore-explicado-que-es-y-como-agregar-a-tu-repositorio/#:~:text=gitignore%20%2C%20es%20un%20archivo%20de,puedes%20crear%20un%20archivo%20global%20.
+
+¿Porqué configurar el editor de código?
+https://www.kodetop.com/editorconfig-para-configurar-tu-editor-de-codigo/
+
+
+¿Qué es un EndPonint?
+https://es.stackoverflow.com/questions/51758/qu%C3%A9-es-un-entry-point-y-un-end-point/51764#:~:text=Los%20endpoints%20son%20las%20URLs,que%20responden%20a%20una%20petici%C3%B3n.&text=La%20diferencia%20entre%20entrypoint%20y,json%2C%20o%20no%20devolver%C3%A1n%20nada.
+
+¿Que es linting?
+
+
+Scrips de npm
+https://lenguajejs.com/npm/administracion/scripts-de-npm/
+
+
+Todo sobre el package json
+https://medium.com/noders/t%C3%BA-yo-y-package-json-9553929fb2e3
+
+¿Que son los cors?
+https://www.ionos.com/digitalguide/websites/web-development/cross-origin-resource-sharing/
+
+
+RESUMEN DEL CURSO:
+https://luchomorla.github.io/anotaciones/cursos/backend%20con%20node/API%20REST%20con%20express/apiRestExpress.html
