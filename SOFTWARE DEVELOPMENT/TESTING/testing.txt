@@ -1,0 +1,4 @@
+https://www.youtube.com/results?search_query=introducci%C3%B3n+al+testing
+https://www.youtube.com/results?search_query=api+testing
+https://www.youtube.com/results?search_query=testing+con+jest
+https://www.youtube.com/results?search_query=curso+de+selenium
