@@ -1,1 +1,0 @@
-//* Programacíon funcional:

@@ -1,4 +1,4 @@
-//*Callbacks: Son funciones que se pasan como argumento dentro de otras funciones y luego se pasan en la función principal para completar alguna tarea en particular. 
+//*Callbacks: Son funciones que se pasan como argumento dentro de otras funciones y se ejecutan despues de que se complete alguna operación 
 
 //* 1) Callbacks sincronas
 

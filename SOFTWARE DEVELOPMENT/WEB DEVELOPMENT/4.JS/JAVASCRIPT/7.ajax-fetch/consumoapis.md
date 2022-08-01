@@ -36,47 +36,14 @@
 //*readystatechange: Es el evento de xhr más importante y se lanza cuando detecta cualquier cambio de estado en la petición. readystate solo, son los mencionados estados de una petición ajax. 
 //*status: codigo de estado del servidor(200,404,etc)
 //*response: Lo que responde el servidor como tal, no confundir con crud booster.
-  
-// //?Paso1
-// const xhr = new XMLHttpRequest(),
-// $render = document.getElementById("ajax-xhr"),
-// $fragment = document.createDocumentFragment();
-
-// console.log(xhr);
-
-// //?Paso2
-// xhr.addEventListener("readystatechange",(e) => {
-//   if (xhr.readyState !== 4) return null;
-//   console.log(xhr);
-
-//   if (xhr.status >= 200 && xhr.status < 300) {
-//     console.log("Petición éxitosa");
-//     //   console.log(xhr.responseText);
-
-//     let json = JSON.parse(xhr.responseText);
-//     console.log(json);
-//     json.forEach((el) => {
-//       const $li = document.createElement("li");
-//       $li.textContent =  `${el.name} -- ${el.email} -- ${el.phone}`;
-//       $fragment.append($li);
-//     });
-//     $render.append($fragment);
-//   } else {
-//     console.log("Error");
-//       let message = xhr.statusText || "Ocurrió un error";
-//       $render.innerHTML = `Error ${xhr.status}: ${message}`;
-//   }
-//   console.log("Este mensaje cargará sea exitosa o no la petición");
-// });
-
-// //?Paso3
-// xhr.open("GET","https://jsonplaceholder.typicode.com/users");
-
-// //?Paso3 de forma local 
-// // xhr.open("GET", "assets/users.json");
-
-// //?Paso4
-// xhr.send();
 
 
+//*Es una libreria que permite hacer peticiones ajax y también funciona con promesas. 
 
+//*Se puede installar con npm o con link
+
+//*Para trabajar con esta libreria se debe tener en cuenta lo siguiente que no se vio en fetch y es que fetch puede recibir no solo la url si no también un objeto de configuración. En esta api de axios funciona muy similar. En este primer caso a Axios solo se le va pasar la URL. 
+
+//*A diferencia de XHR y de fetch en AXIOS no se tiene que hacer el parseo de los datos a JSON dado que la libreria lo hace y estos vienen en la propiedad data de la respuesta. 
+
+//*Axios crea un objeto de tipo error por nosotros

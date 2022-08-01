@@ -68,7 +68,6 @@ Es el nucleo de **Node JS** se compone de un conjunto de librerias y modulos que
 usar el modo estricto para trabajar con buenas practicas: 'use strict' 
 
 ---
-
 ## MODULOS EN NODE JS
 Node funciona a base de módulos, estos módulos son el código de JavaScript que permite a Node tener funcionalidades "pre-hechas" para el programador.
 
@@ -131,9 +130,6 @@ Si se pone la extensión **cjs** se usa commmon
 Si se pone la extensión **mjs** se usa modules 
 Esto puede servir en casos en los que por ejemplo se tenga todo el sistema en modules pero por alguna razón en un archivo se quiere usar common js pues usando la extensión del archivo se fuerza a que utilice ese sistema de módulos que se le esta indicando. 
 
-
-
-
 ---
 
 # Gestión de paquetes o modulos de Node js 
@@ -168,7 +164,6 @@ Para poder tener un Backe-end se debe pensar en que este rol tiene como tarea se
 4. **Body**: Este principalmente para que el cliente mande información. 
 
 
-
 ## OBJETO REQUEST 
 Es un objeto de js que nos permite acceder a propiedades y métodos de las solicitudes. Las solicitudes que vienen por parte del cliente se deben manipular, es decir se deben controlar en el servidor web. Esto se hace con los datos que da el cliente, esta información permite decidir que hacer en servidor en diversos contextos (REST) y que responder ante estas solicitudes. Dicha información puede ser una url headers y bodys. El objeto request nos permite acceder a este tipo de información. 
 
@@ -177,6 +172,8 @@ Es un objeto de js que nos permite acceder a propiedades y métodos de las solic
 * En un puerto solo se puede usar una app.
 
 ## OBJETO RESPONSE
+
+
 
 ### ¿Porque utilizar librerias para manejar un servidor web?
 Comprendiendo la complejidad que tiene manejar la libreria nativa de node, se entiende el porque se usan librerias de un tercero. 
@@ -188,95 +185,8 @@ Basicamente para poder responder debe establecerse un servidor, ponerlo a escuch
 * Se necesitan las cabeceras
 console.log(req.headers);
 * Se necesita el body en los casos que se necesite contenido. El body no lo trae por defecto por lo cual es un poco complejo porque tenemos que de alguna forma crearlo nosotros. Lo que node da es un stream de datos. Se deben ir de alguna forma acumulando la información que viene en ese stream hasta formar un body. 
----
-
-# EXPRESS
-EXPRESS: Es una libreria que permite gestionar de una mejor manera un servidor wev. Express crea una función que permite crear un servidor.
-
-La instacia de express trae en forma de función los métodos http **get post put patch y delete**. A estas funciones les podemos pasar los paths (URLS,Endpoints) a los cuales los clientes van a atacar con esos verbos, esto se puede entender de la siguiente forma: el metodo recibe dos parametros la url y un listener que ejecuta una programación CUANDO se ataque a ese endpoint. La callback recibe dos objetos que son la request y la response.
-
-Express nos permite trabajar con el body de una forma más amigable. Express contiene algo llamado parser que nos ayuda a tomar ese body que viene en forma de stream y parsearlo a algun tipo de dato, ya sea un archivo de texto, un json o lo que sea. 
-
-
----
-
-
-## QUERY Params
-
-
-
-## PATH Parameter
-
-
-## ROUTERS
-Son una herramienta que permiten agrupar rutas para así separar la lógica de los endpoints.
-
-
-
-## Midwalware
-
-
----
-
-
-CREACÍON DE UN BACKEND CON NODE JS
-
-1) Configuración de entorno de etorno de desarrollo y de producción con buenas practicas:
-
--Git ignore:
-
--Configuración del editor de código: Es recomendable para que todos los desarrolladores tengan la misma configuración en su editor de código. Tener la extensión editorconfig. Se puede establecer una configuración que lo que haga se formatear el editor de código para que todos trabajen de la misma manera.
-
--Linters:
-
--Nodemon como servidor de desarrollo: Crear algunas tareas o scripts en el package json.
-
--Instalación de paquetes: npm i nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier -D
-
-#==============================================
-
-2) Creacíon del servidor y routing:
-
-
-Una buena practica es que los endpoints sean en plural.
-
-Single Responsability Principle: Cada pieza de código debe tener una sola responsabilidad, aplica para código, archvios, clases, modulos, etc... Una función que suma no deberia también hacer integrales. Esto también aplica para los archivos de un proyecto. Todo el routing deberia dividirse en archivos que se encarguen de definir las rutas de cada endopoint en espesifico. El nombre que se le dan a estos archivos dependen del equipo de desarrollo.
-
-#==============================================
-
-Servicios: Es donde se pone la lógica del negocio como tal. Encapsular todos los casos de uso.
 
 
 
 
 
-
-#==============================================
-Recursos:
-
-¿Qué es el archivo .gitignore?
-https://www.freecodecamp.org/espanol/news/gitignore-explicado-que-es-y-como-agregar-a-tu-repositorio/#:~:text=gitignore%20%2C%20es%20un%20archivo%20de,puedes%20crear%20un%20archivo%20global%20.
-
-¿Porqué configurar el editor de código?
-https://www.kodetop.com/editorconfig-para-configurar-tu-editor-de-codigo/
-
-
-¿Qué es un EndPonint?
-https://es.stackoverflow.com/questions/51758/qu%C3%A9-es-un-entry-point-y-un-end-point/51764#:~:text=Los%20endpoints%20son%20las%20URLs,que%20responden%20a%20una%20petici%C3%B3n.&text=La%20diferencia%20entre%20entrypoint%20y,json%2C%20o%20no%20devolver%C3%A1n%20nada.
-
-¿Que es linting?
-
-
-Scrips de npm
-https://lenguajejs.com/npm/administracion/scripts-de-npm/
-
-
-Todo sobre el package json
-https://medium.com/noders/t%C3%BA-yo-y-package-json-9553929fb2e3
-
-¿Que son los cors?
-https://www.ionos.com/digitalguide/websites/web-development/cross-origin-resource-sharing/
-
-
-RESUMEN DEL CURSO:
-https://luchomorla.github.io/anotaciones/cursos/backend%20con%20node/API%20REST%20con%20express/apiRestExpress.html
