@@ -415,22 +415,61 @@
 
 //==============================================================================================================
 
-//*MANEJO DE ERRORES con Try catch
+//*MANEJO DE ERRORES con Try catch: Captura los errores sin detener el flujo. 
+
+//*Existen dos tipos de errores, errores de sintaxis o de lógica. 
+// Los errores de sintaxis se suelen enviar al cliente con la propiedad error.name y error.message, los errores de que no son de código como tal si no de lógica suelen conocerse como errores personalizados o excepciones.
 
 //* Sintaxis 
 // try{aquí va el código a evaluar} 
 // catch(error){Captura el error que se encuentre en el try} 
+// Cath tiene dos propiedades diferentes uno el error 
 // finally{Siempre se ejecutará al final de un bloque try-catch}
+
+// const valor = () => 8003966;
+
+// try{
+//     valor()
+// } catch(error){
+//     console.log({"Error name":error.name,"Error message":error.message})
+// }
+
 
 // try {
 //   let numero = "Hola";
 //   if(isNaN(numero)){
-//     throw new Error("El caracter introducido no es un Número")
+//     throw new Error("No es un numero")
 //   } console.log(numero*numero)
 // } 
 // catch (Error) {
 //   console.log(`Se produjo el siguiente error: ${Error}`)
 // }
+
+
+const estudiante = {nombre:"Juan Diego",id:1457880}
+
+function comprobarEstudiante(){
+    try{
+        if(!estudiante.id) throw new SyntaxError("Debe haber una propiedad id")
+    } catch(error){
+       if(error instanceof SyntaxError)
+       {console.error("Información incompleta:",error)}
+       else{throw error;}
+    }
+}
+
+
+try{
+    comprobarEstudiante()
+}catch(error){
+    console.log(error)
+}
+finally{
+    console.log("Se ejecuta haya o no error")
+}
+
+console.log("Continua la ejecución del código");
+
 
 
 //==============================================================================================================
