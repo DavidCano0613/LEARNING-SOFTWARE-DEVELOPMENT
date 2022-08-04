@@ -5,7 +5,6 @@ Node JS es un entorno de ejecución de JavaScript fuera del navegador. Se crea e
 ## Características principales de Node JS:
 
 ![](./assets/nodejs.webp)
-![](./assets/queesnodejs.jpg)
 
 >Event Queue: Contiene todos los eventos que se generan por nuestro código (Funciones, peticiones, etc.), estos eventos quedan en una cola que van pasando uno a uno al Event Loop.
 
@@ -33,7 +32,7 @@ La programación en **Node JS** al ser asincrona es más rapida que en otros len
 ---
 
 ## EL CORE DE NODE.JS
-Es el nucleo de **Node JS** se compone de un conjunto de librerias y modulos que hacen funcionar a node.js de una forma más sencilla para el programador. 
+**Node JS** tiene un nucleo el cual se compone de un conjunto de librerias y modulos que hacen funcionar a node.js de una forma más sencilla para el programador. Es decir, provee de forma nativa una serie de librerias para hacer cosas como levantar un servidor web, acceder al sistema operativo y manipular cosas de bajo nivel.
 
 ## Algunos módulos muy usados en node.js son:
 - Globals
@@ -43,7 +42,6 @@ Es el nucleo de **Node JS** se compone de un conjunto de librerias y modulos que
 - HTTP
 - Buffer
 - Stream
-- Util 
 - Timers
 
 
@@ -69,14 +67,14 @@ usar el modo estricto para trabajar con buenas practicas: 'use strict'
 
 ---
 ## MODULOS EN NODE JS
-Node funciona a base de módulos, estos módulos son el código de JavaScript que permite a Node tener funcionalidades "pre-hechas" para el programador.
+Node funciona a base de módulos, estos módulos son el código  JavaScript que permite a Node tener funcionalidades "pre-hechas" para el programador.
 
 ## MODULOS DEL CORE
 Son modulos que son como el corazón de Node JS. Estos módulos los podemos usar sin necesidad de importarlos explícitamente en nuestro código, pueden ser usados en cualquier archivo de Node.
-Para que Node funcione correctamente siempre ha de tener sus módulos globales, son aquellos módulos que nos permiten usar la mayoría de funcionalidades básicas y complejas que conocemos de Node, como setTimeout, setInerval, console.log etc.
+Para que Node funcione correctamente siempre ha de tener sus módulos globales, son aquellos módulos que nos permiten usar la mayoría de funcionalidades básicas y complejas que conocemos de Node, como setTimeout, setInterval, console.log... etc.
 
 ### Objeto global 
-En Node JS existe el objeto global que tiene métodos y propiedades, es como el _objeto window del navegador_ pero en **Node JS** a esto es lo que se le llama módulos globales.
+En Node JS existe el **objeto global** que tiene métodos y propiedades, es como el _objeto window del navegador_ pero en **Node JS** a esto es lo que se le llama módulos globales.
 
 Algunos módulos globales son:
 * setInterval
@@ -101,34 +99,34 @@ https://jairofernandez.medium.com/manejo-de-variables-de-entorno-en-node-js-ac90
 Normalmente cuando se crea una app se establece una pequeña arquitectura. Todo no se hace en un solo archivo si no que se crean varios y estos se van interconectando. 
 
 ## ¿Qué es un módulo?
-Los modulos no son mas que un conjunto de utilidades que nos permite comunicar diferentes partes del código. Habitualmente, cada parte de ese código se encuentra en archivos y carpetas separados. 
+Los modulos no son mas que un conjunto de utilidades que nos permite comunicar diferentes partes del código. Habitualmente, cada parte de ese código se encuentra en archivos y carpetas separados y son utiles para: 
 
 * Encapsular funcionalidad 
 * Incrementar la reusabilidad.
-* Mejoraremos la estructura de nuestros proyectos.
+* Mejoraremos la estructura de los proyectos.
 
-## Sistemas de módulos en node
-Para esto se usa un sistema de modulos y Node JS por defecto trae **Common JS** pero esta la versión mas moderna que son los modulos de **ECMAS-5**.
+## Sistemas de módulos de NODE
+Para esto se usa un sistema de modulos y Node JS por defecto trae a **Common JS** pero esta la versión más moderna que son los modulos de **ECMAS-5**.
 
-## ¿Cual es la diferencia etre Require e Import (Common JS cs ES Modulos)
+## ¿Cual es la diferencia etre Require e Import (Common JS vs ES Modulos)
 
 **CommonJS:** Sistema por defecto usado en Node.js. Puede exportar e importar, modulos de node js, código creado por nosotros y también Jsons.
 
 ## OBJETO Module
-Es el objeto interno que tiene Node. Este objeto dentro de sus propiedades tiene una llamada **exports**. Esta propiedad también es un objeto y contiene aquello que se va a exportar. Es importante por que me dice que estoy exportando realmente
+Es un objeto interno que tiene Node. Este objeto dentro de sus propiedades tiene una propiedad llamada **exports**. Esta propiedad también es un objeto y contiene aquello que se va a exportar. Es importante por que dice que se esta exportando realmente.
 
 ## ECMAScript Modules(ESM): 
 Sistema oficial de JavaScript para la gestión de módulos.
 
-## Como escoger el sistema de módulos queremos usar.
+## Como escoger el sistema de módulos que queremos usar.
 
 ### Indicandolo en el package Jsons
 Si no se marca nada se esta utilizando common js dado que es por Defecto. O indicando con type:module. 
 
 ### Indicandoselo en la extensíon del archivo
-Si se pone la extensión **cjs** se usa commmon 
-Si se pone la extensión **mjs** se usa modules 
-Esto puede servir en casos en los que por ejemplo se tenga todo el sistema en modules pero por alguna razón en un archivo se quiere usar common js pues usando la extensión del archivo se fuerza a que utilice ese sistema de módulos que se le esta indicando. 
+* Si se pone la extensión **cjs** se usa commmon 
+* Si se pone la extensión **mjs** se usa modules 
+>Esto puede servir en casos en los que por ejemplo se tenga todo el sistema en modules pero por alguna razón en un archivo se quiere usar common js pues usando la extensión del archivo se fuerza a que utilice ese sistema de módulos que se le esta indicando. 
 
 ---
 
@@ -139,6 +137,26 @@ Esto se hace para no reinventar la rueda ademas incluso en cosas muy snecillas n
 
 ---
 
+# MODULO BUFFERS AND STREAMS
+
+
+
+
+# MODULO FIYLESYSTEM
+
+# MODULO PROCESS
+
+# MODULO OS 
+
+
+
+
+
+
+
+
+
+---
 # MODULO HTTP EN NODE JS 
 El modulo http es una libreria interna de Nodejs la cual permite crear un servidor y poder realizar conexiones con el mismo.
 
@@ -172,7 +190,6 @@ Es un objeto de js que nos permite acceder a propiedades y métodos de las solic
 * En un puerto solo se puede usar una app.
 
 ## OBJETO RESPONSE
-
 
 
 ### ¿Porque utilizar librerias para manejar un servidor web?
