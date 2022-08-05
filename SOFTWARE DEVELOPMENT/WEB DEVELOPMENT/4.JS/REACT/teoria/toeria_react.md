@@ -107,7 +107,7 @@ Son valores que recibe un componente hijo de un componente padre y se agrupan en
 # ESTADO y CICLO DE VIDA: 
 El estado son un conjunto de variables que tiene un componente en un momento determinado dentro del flujo de una aplicación.
 
-El estado define como se modifica un componente es decir que valores tiene el componente en determinado momento
+El estado define como se modifica un componente es decir que valores tiene el componente en determinado momento de la aplicación.
 
 El estado permite cambiar el valor de una variable en función de las interacciones que hace el usuario.
 
@@ -120,14 +120,35 @@ No se puede modificar el estado directamente para eso React tiene un método set
 
 El estado en React tiene una sola via de comunucación y es de los elementos padres a los elementos hijos. 
 
-El estado en términos más sencillo es un objeto que contiene esas variables ya mencionadas. 
+El estado en términos más sencillo es un **objeto** que contiene esas propiedades (variables) ya mencionadas. 
 
 El estado de un componente padre se le puede pasar a un componente hijo
+
+con this.state se crea el estado en los componentes de clase
+setState permite modificar el estado
 
 ### Ciclo de vida de los componentes:
 1. Montado
 2. Actualizacion 
 3. Desmontaje
+
+---
+# RENDERIZADO DE COMPONENTES CONDICIONAL
+
+Se suele usar el operador ternario y funciona en convinación con el estado. 
+
+---
+# RENDERIZADO DE ELEMENTOS
+
+En react cuando se renderizan elementos de tipo estructuras de datos como arrays u objetos es muy importante 
+asignarle a estos un id, pues esto ayuda a react a que en su virtual dom tenga una referencia exacta de donde se encuentra
+ese elemento que tiene que renderizar. Esto se hce añadiendo a la etiqueta el atributo key este no va al dom como tal si no al virtual dom
+
+
+
+
+
+
 
 
 

@@ -4,6 +4,8 @@ import './App.css';
 import Componente from './components/Componente.js'
 import Propiedades from './components/Propiedades';
 import Estado from './components/Estado';
+import RenderizadoCondicional from './components/RenderizadoCondicional';
+import RenderizadoElementos from './components/RenderizadoElementos';
 
 
 function App() {
@@ -40,7 +42,9 @@ function App() {
         componenteReact = {<Componente msg="Hola soy un componente pasado como prop"/>}
         />
         <hr/>
-        <Estado/>
+        < Estado />
+        <RenderizadoCondicional/>
+        <RenderizadoElementos/>
       </section>
       </header>
     </div>
