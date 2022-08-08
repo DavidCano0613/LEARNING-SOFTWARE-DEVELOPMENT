@@ -21,10 +21,7 @@ document.addEventListener("DOMContentLoaded", (evento) => {
   contactFormValidations()
 });
 
-//*EVENTOS DEL TECLADO
-//*keyup: Soltamos la tecla
-//*keydown: Presionamos la tecla
-//*keypress = Mientras presionamos
+
 
 // document.addEventListener("keydown", (e) => {
 //   shortcuts(e);

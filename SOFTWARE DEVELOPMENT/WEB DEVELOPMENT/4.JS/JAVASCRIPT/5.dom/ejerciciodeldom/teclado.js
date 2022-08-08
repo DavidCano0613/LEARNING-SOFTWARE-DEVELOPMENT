@@ -1,17 +1,20 @@
-const dom = document
+//*EVENTOS DEL TECLADO
+//*keyup: Soltamos la tecla
+//*keydown: Presionamos la tecla
+//*keypress = Mientras presionamos
 
-export function shortcuts(e){
-  console.log(e)
-  console.log(e.type)
-  console.log(e.key)
-  console.log(e.keyCode)
-  console.log(e.ctrlKey)
-  console.log(e.altKey)
-  console.log(e.shiftKey)
+const dom = document;
 
-  if(e.key === "a" && e.altKey){
-    alert("Has lanzado una alerta con el teclado")
+export function shortcuts(e) {
+  console.log(e);
+  console.log(e.type);
+  console.log(e.key);
+  console.log(e.keyCode);
+  console.log(e.ctrlKey);
+  console.log(e.altKey);
+  console.log(e.shiftKey);
+
+  if (e.key === "a" && e.altKey) {
+    alert("Has lanzado una alerta con el teclado");
   }
-
 }
-

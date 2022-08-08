@@ -13,14 +13,14 @@ En react se hace la programación de forma reactiva y orientada a componentes. R
 - Fuerte comunidad.
 - Documentación multi-idioma.
 - Flujo de datos unidireccional.
+- Alredador de React js hay un monton de librerias y herramientas adicionales. 
+
 
 ## DESVENTAJAS:
 - Complejo.
-- JSX.
+- JSX es una sintaxis algo confusa.
 - Necesidad de un ecosistema de muchas herramientas.
 - Problemas de SEO.
-
-Alredador de React js hay un monton de librerias y herramientas adicionales. 
 
 ## ¿CÓMO CONSTRUYERON REACT.JS?
 - Declarativo: Que sea facil de leer, que con sus sintaxis ya se pueda entender.
@@ -28,43 +28,45 @@ Alredador de React js hay un monton de librerias y herramientas adicionales.
 - Multiplataforma: Se podra usar en todas partes con unos cambios minimos.
 
 ## CREATE REACT APP
-Es una especie de pre-configurador de react que nos ayuda a comenzar con aplicaciones de react es un empaquetador que usa react para no tener que configurar muchas cosas. Trae una serie de dependencias y configuraciones para poder empezar a crear aplicaciones con React. 
+Es una especie de pre-configurador de **React** que nos ayuda a comenzar con aplicaciones de React es un empaquetador que usa React para no tener que configurar muchas cosas. Trae una serie de dependencias y configuraciones para poder empezar a crear aplicaciones con React. 
 
 ## COMANDOS BASICOS DE REACT 
-- npx create-react-app "nombre del proyecto": Crea un proyecto de react
-- npm start: Arranca el servidor 
+- npx create-react-app "nombre del proyecto": Crea un proyecto de React.
+- npm start: Arranca el servidor.
 - npm build: Crea la carpeta build lo que genera el build es lo que se va a desplegar.
 - npm test: Para ejecutar algun tipo de prueba 
 -eject (No hacer esto)
 
 ## ESTRUCTURA DE CARPETAS EN REACT: 
 https://www.youtube.com/watch?v=htuBG14-zHs&ab_channel=LuisitoHabla
-- src: En esta carpeta se guardan todas las carpetas que nosotros creemos es decir las que no crea create react app. 
-- node modules: En esta se guardan todos los
-- public: En esta carpeta se guardan
-- Components: En esta carpeta se guardan todos los componentes que seran reusados a nivel de toda la app.
-- Api: En esta carpeta se guardan todos los archivos ncesarios para la parte de los requests.
-- pages: Aqui se crea un index.js y los diferentes componentes. 
-- modules: Para separar la logica de cada sección
+
+- SRC: En esta carpeta se guardan todas las carpetas que nosotros creemos es decir las que no crea create react app. 
+- NODE MODULES: En esta se guardan todos los
+- PUBLIC: En esta carpeta se guardan
+- COMPONENTS: En esta carpeta se guardan todos los componentes que seran reusados a nivel de toda la app.
+- API: En esta carpeta se guardan todos los archivos ncesarios para la parte de los requests.
+- PAGES: Aqui se crea un index.js y los diferentes componentes. 
+- MODULES: Para separar la logica de cada sección.
 
 ---
 
 # SINTAXIS JSX
 JSX es la sintaxis que sirve para escribir código html y js es como una mezcla entre estos dos y que react tras bambalinas transpila a código react. Sin embargo, se debe tener en cuenta lo siguiente: 
 
-- JSX no es hmtl 
 
-- Lo importante de js es que react lo transpila y lo convierte en un componente que se puede ver en la UI.
+- > Basicamente JSX consiste en embeber código JS en código HTML (algo similar a php) y se hace poniendo {} {dentro de estos se pone el código js}
 
-- Hay una etiqueta muy importante y es la div con el atributo root, react identifica esta etiqueta y es en esta donde todo se renderiza. 
+- >JSX no es HTML
 
-- Basicamente jsx consiste en embeber código js en código html (algo similar a php) y se hace poniendo { dentro de estos se pone el código js}
+- >Lo importante de JSX es que React lo transpila y lo convierte en un componente que se puede ver en la UI.
+
+- >Hay una etiqueta muy importante y es la DIV con el atributo ROOT, React identifica esta etiqueta y es en esta donde todo se renderiza. 
  
-- Las etiquetas que no se cierran como img, input, entre otras, se les debe poner el cierre /. 
+- > Las etiquetas html que no se cierran como: img, input, entre otras, se les debe poner el cierre />. 
 
-- Para poder poner elementos hermanos como divs debajo de articles y viceversa se debe tener un contenedor general. Debe haber un contenedor padre perse (si o si ). 
+- >Siempre debe haber un contenedor PADRE. Para poder poner elementos hermanos como divs debajo de articles y viceversa se debe tener un contenedor general. Debe haber un contenedor padre perse (si o si ). 
 
-- Hay una forma de crear un padre general que se conoce como fragmento, que crea un wraper vacio, esto porque toda sintaxis jsx debe ser como un solo contenido, ya sea que se contenga en un div, section, article o el anteriormente mencionado fragmento. <></>
+- >Hay una forma de crear un padre general que se conoce como fragmento, que crea un wraper vacio, esto es debido a que toda sintaxis JSX debe ser como un solo contenido, ya sea que se contenga en un div, section, article o el anteriormente mencionado fragmento. <></>
 
 ---
 # COMPONENTES EN REACT
@@ -97,9 +99,7 @@ Son valores que recibe un componente hijo de un componente padre y se agrupan en
 * arrays, 
 * objects. 
 * functions, 
-* react elements y hasta react components.
-
-
+* React elements y hasta React components.
 
 
 ---

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 import Componente from './components/Componente.js'
 import Propiedades from './components/Propiedades';
 import Estado from './components/Estado';
@@ -10,7 +11,6 @@ import RenderizadoElementos from './components/RenderizadoElementos';
 
 function App() {
   let array = ["Primavera","Verano","Otoño","Invierno"];
-  let rodrigus = "Rodrigus dolfus";
   return (
     <>
       <div className="App">
@@ -25,11 +25,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React by Juancho
+          Learn React by Juan David Paniagua Cano
         </a>
+
+        {/* By Me */}
+        <hr/>
         <section>
         {array.map(elemento => <li>{elemento}</li>)}
-        <h3>{rodrigus}</h3>
         <Componente msg="Hola soy un componente desde una prop"/>
         <Propiedades 
         cadena="String"
@@ -42,7 +44,7 @@ function App() {
         componenteReact = {<Componente msg="Hola soy un componente pasado como prop"/>}
         />
         <hr/>
-        < Estado />
+        <Estado/>
         <RenderizadoCondicional/>
         <RenderizadoElementos/>
       </section>

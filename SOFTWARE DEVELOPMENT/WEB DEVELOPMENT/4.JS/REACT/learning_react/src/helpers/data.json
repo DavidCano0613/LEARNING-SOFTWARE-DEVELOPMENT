@@ -2,27 +2,28 @@
     "frameworks":[
         {
             "id":1,
-            "name":"React",
+            "nombre":"React",
             "web":"https://reactjs.org/"
         },
         {
             "id":2,
-            "name":"Angular",
+            "nombre":"Angular",
             "web":" "
 
         },
         {
             "id":3,
-            "name":"View",
+            "nombre":"View",
             "web":"https://vuejs.org/guide/introduction.html"
 
 
         },
         {
             "id":4,
-            "name":"Svelte",
+            "nombre":"Svelte",
             "web":"https://svelte.dev/"
 
         }
     ]
 }
+
