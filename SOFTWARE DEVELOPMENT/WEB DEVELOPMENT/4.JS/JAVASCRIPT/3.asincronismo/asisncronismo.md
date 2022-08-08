@@ -1,6 +1,6 @@
-Asincronía y event loop en JavaScript 
+# Asincronía y event loop en JavaScript 
 
-Conceptos a tener en cuenta:
+## Conceptos a tener en cuenta:
 
 Procesamiento Single thread y Multi thread.
 
@@ -19,10 +19,54 @@ Código Síncrono Bloqueante:
 Cada operación se hace de una vez bloqueando el flujo del hilo principal y este queda bloqueado mientras espera la respuesta para luego liberar recursos y pasar a la siguiente y asi sucesivamente. 
 
 
-Promesas: Son objetos que representan el resultado eventual de una operación asincrona. Estas pueden tener varios estados. 
-Pendiente: No se ha resuelto ni rechazado la promesa.
-Resulta: La promesa se cumplio y se resuelve
-Rechazada: La promesa no se cumple y se rechaza. 
+---
+# PROMESAS
 
-Resolve y Reject son funciones que hacen ya algo predeterminado. El proposito de la función resolve es cambiar el status de la promesa de pendiente a resuelto! y el de la función reject es cambiar el status de la promesa de pendiente a rechazado. En este caso lo que el desarrollador debe hacer es indicar cuando la promesa se va considerar resuelta y cuando se va considerar rechazada. Esto se hace por medio de un condicional.
+Son un objeto especial de JavaScript que representan el resultado eventual de una operación asincrona. Esto significa que existe un código que va realizar una tarea la cual conlleva cierto tiempo (el cual es desconocido en la mayoria de casos) y por lo tanto si existe **Otro código que depende del que esta siendo ejecutado de forma asincrona**. 
+
+### Las promesas se pueden descomponer de la siguiente forma:
+
+1. Acciones = Código asincrono de la promesa.
+2. Consumidor = El código que espera el resultado de esa operación asincrona, en otras palabras el resultado de la promesa.
+3. Resultado = Resuelta o Rechazada.
+
+### Sintaxis de una promesa
+Las promesas reciben 3 pametros, resolve,reject y una función de tipo callback que dentro de su cuerpo contiene las acciones de la promesa. 
+
+## Estados de una promesa 
+Las promesas pueden tener varios estados y estos indican que esta pasando o que paso con la promesa. 
+Las promesas tienen unas propiedades internas las cuales se conocen como estado de la promesa y son:
+
+* Pendiente: No se ha resuelto ni rechazado la promesa.
+* Resuelta: La promesa se cumplio y se resuelve.
+* Rechazada: La promesa no se cumple y se rechaza. 
+
+Estas propiedades son _callbacks_ que se llaman cuando se resuelva o rechaze la promesa. 
+
+Una promesa solo tiene un resultado final posible: o se resuelve o se rechaza y se acabo, es decir solo se resuelve una vez o solo se rechaza una vez, por lo tanto se debe tener cuidado y usar estas propiedades una sola vez.
+
+
+## Resolve y Reject 
+**Resolve y Reject** son funciones que hacen ya algo predeterminado. 
+
+>El proposito de la función Resolve es cambiar el estatus de la promesa de pendiente a resuelto! 
+
+>El proposito de la función Reject es cambiar el estatus de la promesa de pendiente a rechazado! 
+
+El desarrollador debe establecer cuando la promesa se va considerar resuelta o rechazada. Esto se hace por medio de un condicional.
+
+
+## Then, Catch y Finally
+
+Por otro lado las promesas tienen unos métodos los cuales son _then, catch y finally_ estos pueden entenderse como el consumidor _(código que espera el resultado de la promesa)_ es decir es el que sufre las consecuencias del resultado de esa promesa(recordando que esta puede ser satisfactoria o no.)
+
+>Then se ejecuta cuando el resultado de la promesa es positivo (recibe lo que se mande en el resolve).
+
+>Catch se ejecuta cuando el resultado es negativo (recibe lo que se mande en el reject del reject)
+
+> Finally es código que se ejecuta independiente de si la promesa de resolvio o se rechazo. 
+
+----
+
+# ASYNC / AWAIT 
 
