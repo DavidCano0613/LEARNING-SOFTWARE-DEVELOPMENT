@@ -1,5 +1,3 @@
-import e from "express";
-
 const dom = document;
 
 export default function contactFormValidations(){
@@ -47,11 +45,8 @@ export default function contactFormValidations(){
     alert("Enviando Formulario");
     let $loader = dom.querySelector(".contact-form-loader");
     let $response = dom.querySelector(".contact-form-response");
-
     $loader.classList.remove("none");
-
-  })
-
+  });
 }
 
 
