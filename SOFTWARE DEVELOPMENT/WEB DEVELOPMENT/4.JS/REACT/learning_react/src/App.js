@@ -2,11 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Componente from './components/Componente.js'
+import Componente from './components/Componente.js';
 import Propiedades from './components/Propiedades';
 import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
 import RenderizadoElementos from './components/RenderizadoElementos';
+import { EventosES6,EventosES7 } from './components/Eventos';
 
 
 function App() {
@@ -47,6 +48,8 @@ function App() {
         <Estado/>
         <RenderizadoCondicional/>
         <RenderizadoElementos/>
+        <EventosES6></EventosES6>
+        <EventosES7></EventosES7>
       </section>
       </header>
     </div>

@@ -1,4 +1,3 @@
-import { closestIndexTo } from "date-fns";
 import React, { Component } from "react";
 import data from '../helpers/data.json';
 
@@ -16,7 +15,6 @@ export default class RenderizadoElementos extends Component {
         this.state = {
             seasons: ["Primera", "Verano", "Otoño", "Invierno"]
         }
-
     }
     render() {
         console.log(data)
