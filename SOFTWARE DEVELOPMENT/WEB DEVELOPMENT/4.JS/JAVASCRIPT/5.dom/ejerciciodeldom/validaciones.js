@@ -60,7 +60,6 @@ export default function contactFormValidations(){
     }, 3000);
     },3000);
   })
-
 }
 
 

@@ -144,12 +144,29 @@ En react cuando se renderizan elementos de tipo estructuras de datos como arrays
 asignarle a estos un id, pues esto ayuda a react a que en su virtual dom tenga una referencia exacta de donde se encuentra
 ese elemento que tiene que renderizar. Esto se hce añadiendo a la etiqueta el atributo key este no va al dom como tal si no al virtual dom
 
+# EVENTOS EN REACT JS
+
+El concepto de evento en React JS se mantiene al igual que en JS y los demas frameworks. Son acciones que ocurren en el sistema y desencadenan cierta programación.
+
+Su sintaxis es muy similar al como se asignan eventos en html. 
+
+En React la forma de establecer elementos esta en función de si se trata de un componente **funcional** o de **clase**
+
+
+## Comportamiento de los eventos en un componente de clase: 
+
+Hacer el bindeo desde el ocnstructor para que todas las instancias del metodo ya tengan enlazado el this de la clase
+
+Para el que por ahí no entiende. Es que en el onClick en realidad no estamos llamando la función sumar, sino que estamos llamando la propiedad sumar que está en el constructor que esa si almacena a la función enlazando el this mediante el bind.
+Corregirme si me equivoco
+
+## Properties Initializers
+
+## Eventos Nativos, Sintéticos y Personalizados
+
+
+## Comunicación entre componentes
 
 
 
-
-
-
-
-
-
+# CICLO DE VIDA DE LOS COMPONENTES 
