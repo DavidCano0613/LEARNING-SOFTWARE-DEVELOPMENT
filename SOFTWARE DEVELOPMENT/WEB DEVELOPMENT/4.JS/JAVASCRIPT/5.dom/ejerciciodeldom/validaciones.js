@@ -1,9 +1,8 @@
-import e from "express";
-
 const dom = document;
 
 export default function contactFormValidations(){
 
+  //* 
   const $form = document.querySelector(".contact-form");
   const $inputs = dom.querySelectorAll(".contact-form [required]");
   console.log($inputs);
@@ -17,6 +16,7 @@ export default function contactFormValidations(){
     $span) 
   });
 
+  //* 
   dom.addEventListener("keyup", (evento)=>{
     if(evento.target.matches(".contact-form [required]")){
       let $input = evento.target;
@@ -31,6 +31,7 @@ export default function contactFormValidations(){
           ? dom.getElementById($input.name).classList.add("is-active")
           : dom.getElementById($input.name).classList.remove("is-active");
       }
+
       if(!pattern){
         console.log("El input tiene no patrón");
         return $input.value === ""
@@ -42,14 +43,22 @@ export default function contactFormValidations(){
     }
   })
 
-  dom.addEventListener("submit",(evento)=>{
+  //* 
+  dom.addEventListener('submit',(evento)=>{
     evento.preventDefault();
     alert("Enviando Formulario");
     let $loader = dom.querySelector(".contact-form-loader");
     let $response = dom.querySelector(".contact-form-response");
-
     $loader.classList.remove("none");
 
+    setTimeout(() => {
+    $loader.classList.add('none');
+    $response.classList.remove('none')
+    $form.reset()
+    setTimeout(() => {
+      $response.classList.add("none")
+    }, 3000);
+    },3000);
   })
 
 }

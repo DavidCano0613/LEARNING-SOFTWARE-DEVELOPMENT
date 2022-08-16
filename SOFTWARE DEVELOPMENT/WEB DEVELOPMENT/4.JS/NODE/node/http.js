@@ -1,32 +1,30 @@
-// import {createServer} from 'http';
-//*Al llamar esta función se crea una instacia de tipo servidor. 
+import {createServer} from 'http';
+// *Al llamar esta función se crea una instacia de tipo servidor. 
 
-// const httpServer = createServer((req,res)=>{
+const httpServer = createServer((req,res)=>{
 
-//   console.log(req.method)
+  console.log(req.method)
+  console.log(req.url);
+  console.log(req.headers)
 
-//   console.log(req.url);
+  let data = "";
+  let chunckIndex = 0;
+  req.on('data',(chunk)=>{
+    data += chunk
+    chunckIndex++,
+    console.log(chunckIndex)
+  })
 
-//   console.log(req.headers)
+  req.on('end',()=>{
+    // console.log(data)
+  })
 
-  // let data = "";
-  // let chunckIndex = 0;
-  // req.on('data',(chunk)=>{
-  //   data += chunk
-  //   chunckIndex++,
-  //   console.log(chunckIndex)
-  // })
+  res.end("Se ha recibido tu petición, mi labor es avisarte y ya")
+})
 
-  // req.on('end',()=>{
-  //   // console.log(data)
-  // })
-
-//   res.end("Se ha recibido tu petición, mi labor es avisarte y ya")
-// })
-
-// httpServer.listen(3000,()=>{
-//   console.log(`Escuchando en el puerto 3000`)
-// })
+httpServer.listen(3000,()=>{
+  console.log(`Escuchando en el puerto 3000`)
+})
 
 
 
