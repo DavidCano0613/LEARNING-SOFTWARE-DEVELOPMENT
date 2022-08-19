@@ -1,49 +1,32 @@
 import{ Router } from 'express';
-
-import { USERS_BBDD } from '../../node/bdd'
-
-
+import authByEmailPassword from '../node/helpers/check-email-password.js'
 const authRouter = Router();
 
 
-authRouter.get('/publico',(req,res)=> res.send("Endpoint público"))
+//* No es necesaria autenticación ni autorización  
+authRouter.get('/publico',(req,res)=> res.send("Endpoint público cualquiera puede acceder"))
 
-authRouter.post('autenticado',(req,res)=>{
-    const {email,password} = req.body;
+authRouter.post('/autenticado',(req,res)=>{
+    const {email, password} = req.body;
+    if(!email || !password) return res.sendStatus(400)
+    try{
+        const user = authByEmailPassword(email,password)
+        res.send(`Usuario ${user.name} autenticado`);
+    }
+    catch(error){
+        return res.sendStatus(401)
+    }
+});
 
-
-    if(!email || !password) return res.send(400)
-
-    const user = USSERS_BBDD.filter(user => user.email === email)
-
-    if(!user) return res.send(401);
-
-    if(!user.password === password) return res.send(401);
-
-    res.send(`Usuario ${user.name} autenticado`);
-
-})
-
-authRouter.post("autorizado",(req,res)=>{
-    const {email,password} = req.body;
-
-    if(!email || !password) return res.send(400)
-
-    const user = USSERS_BBDD.filter(user => user.email === email)
-
-    if(!user) return res.send(401);
-
-    if(!user.password === password) return res.send(401);
-
-    if(!user.role !== 'admin') return res.send(403);
-
-    res.send(`Usuario administrador ${user.name} autenticado`);
-
-})
-
-
-
-
-
+authRouter.post("/autorizado",(req,res)=>{
+    const {email, password} = req.body;
+    if(!email || !password) return res.sendStatus(400)
+    try{
+        const user = authByEmailPassword(email,password)
+        res.send(`Usuario administrador ${user.name} autenticado`);
+        if(user.role !== 'admin') return res.sendStatus(403);
+    } catch(error){
+    }
+});
 
 export default authRouter 

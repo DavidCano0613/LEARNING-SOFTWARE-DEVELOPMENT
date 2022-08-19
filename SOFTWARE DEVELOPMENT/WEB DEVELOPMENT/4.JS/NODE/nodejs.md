@@ -14,7 +14,6 @@ Node JS es un entorno de ejecución de JavaScript fuera del navegador. Se crea e
 
 >IMPORTANTE: Cuando ocurre un error dentro de alguno de los hilos y no se controla apropiadamente. Node detiene todos los hilos ejecución. Esto puede ser muy peligroso, debido a que es dificil determinar fue el origen del problema y en que punto de ejecución se encontraba cada hilo cuando fue detenido.
 
-
 # Blocking code Vs No blocking code
 
 **Bloqueante:** Cada tarea se ejecuta una detras de la otra bloqueando el hilo de ejecución de tal manera que una tarea no puede ejecutarse y tiene que esperar hasta que la tarea que esta en curso se termine.
@@ -129,7 +128,6 @@ Si no se marca nada se esta utilizando common js dado que es por Defecto. O indi
 >Esto puede servir en casos en los que por ejemplo se tenga todo el sistema en modules pero por alguna razón en un archivo se quiere usar common js pues usando la extensión del archivo se fuerza a que utilice ese sistema de módulos que se le esta indicando. 
 
 ---
-
 # Gestión de paquetes o modulos de Node js 
 Es posible usar modulos de npm para gestionarlos podemos ir npm y buscar librerias se puede analizar que dependencias tienen estas librerias y otra información adicional de como funciona el paquete.
 
@@ -139,21 +137,11 @@ Esto se hace para no reinventar la rueda ademas incluso en cosas muy snecillas n
 
 # MODULO BUFFERS AND STREAMS
 
-
-
-
 # MODULO FIYLESYSTEM
 
 # MODULO PROCESS
 
 # MODULO OS 
-
-
-
-
-
-
-
 
 
 ---
@@ -181,7 +169,6 @@ Para poder tener un Backe-end se debe pensar en que este rol tiene como tarea se
 3. **Los headers**: Información 
 4. **Body**: Este principalmente para que el cliente mande información. 
 
-
 ## OBJETO REQUEST 
 Es un objeto de js que nos permite acceder a propiedades y métodos de las solicitudes. Las solicitudes que vienen por parte del cliente se deben manipular, es decir se deben controlar en el servidor web. Esto se hace con los datos que da el cliente, esta información permite decidir que hacer en servidor en diversos contextos (REST) y que responder ante estas solicitudes. Dicha información puede ser una url headers y bodys. El objeto request nos permite acceder a este tipo de información. 
 
@@ -190,7 +177,6 @@ Es un objeto de js que nos permite acceder a propiedades y métodos de las solic
 * En un puerto solo se puede usar una app.
 
 ## OBJETO RESPONSE
-
 
 ### ¿Porque utilizar librerias para manejar un servidor web?
 Comprendiendo la complejidad que tiene manejar la libreria nativa de node, se entiende el porque se usan librerias de un tercero. 
