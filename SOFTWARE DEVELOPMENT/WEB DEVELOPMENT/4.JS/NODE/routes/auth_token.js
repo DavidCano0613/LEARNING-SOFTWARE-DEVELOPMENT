@@ -1,5 +1,5 @@
 import {Router} from 'express'
-import authByEmailPassword from '../node/helpers/check-email-password';
+import authByEmailPassword from "../node/helpers/check-email-password.js";
 
 const authTokenRouter = Router();
 

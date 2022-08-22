@@ -2,6 +2,10 @@ import express from "express";
 import dotenv from 'dotenv';
 import accountRouter from "../routes/account.js";
 import authRouter from "../routes/auth.js";
+import cookieParse from 'cookie-parser';
+import cookieParser from "cookie-parser";
+import authSessionRouter from "../routes/auth_session.js";
+import authTokenRouter from "../routes/auth_token.js";
 
 dotenv.config();
 process.env.PORT;
@@ -11,6 +15,7 @@ const expressApp = express();
 
 expressApp.use(express.json());
 expressApp.use(express.text());
+expressApp.use(cookieParser());
 
 //*ROUTERS
 expressApp.use('/account',accountRouter);
@@ -21,6 +26,7 @@ expressApp.use('/auth-token',authTokenRouter);
 
 expressApp.listen(PORT,()=>{ 
   console.log("Esta escuchando en el puerto",PORT);
+
 }) 
 
 
