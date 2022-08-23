@@ -32,15 +32,15 @@ The browser assembles the small chunks into a complete web page and displays it 
 
 features
 pages
- every time a web page does more than just sit there and display static information for you to look at 
-— displaying timely 
+every time a web page does more than just sit there and display static information for you to look at 
+displaying timely 
 content updates, 
 interactive maps, 
 animated 2D/3D graphics, 
 scrolling video 
 jukeboxes,
 layer of the layer cake
- defining paragraphs
+defining paragraphs
 headings,
 data tables, 
 embedding 
@@ -70,71 +70,72 @@ plot it on a map.
 retrieves
 to run your code in
 embed custom maps
- functionality.
- there are a lot of basics to cover first. 
+functionality.
+there are a lot of basics to cover first. 
 let's move on!
 and while doing so
 Let's briefly recap 
 load 
- execution environment
- factory 
+execution environment
+factory 
 outputs a product
 bucket 
 tab
+
 customized
 ceil
 floor
- pirates 
+pirates 
 running order 
 attaching 
 event listener
 so that
 swapped 
 it would no longer work  
- error returned 
+error returned 
 objects referenced
 Interpred vs compiled code 
- context of programming
- its programmer-friendly text form and processed directly from that.
- binary format,
+context of programming
+its programmer-friendly text form and processed directly from that.
+binary format,
 program source code
 script 
 standpoint
 JavaScript is still considered an interpreted language, since the compilation is handled at run time, rather than ahead of time.
 server-side
- development. Client-side code is code that is run on the user's computer 
+development. Client-side code is code that is run on the user's computer 
 Dynamic code
 Static code 
 update the display of a web page
 generating new content as required
- pulling data from a database
+pulling data from a database
 whereas
- slightly
- approaches
- is referred to as static
+slightly
+approaches
+is referred to as static
 text editor.
 clickable button.
 placed below.
- If your example doesn't seem to work
+If your example doesn't seem to work
 fussy
 external file
 directory
 sample
 filename extension
- It works just the same
- reusable across multiple
- HTML is easier to read without huge chunks of script dumped in it.
- refresh your browser
+It works just the same
+reusable across multiple
+HTML is easier to read without huge chunks of script dumped in it.
+Refresh your browser
 Inline javascript handlers
- you'll come across bits of actual JavaScript code
- inefficient
+you'll come across bits of actual JavaScript code
+inefficient
 pollute
 You can then loop through the buttons, assigning a handler for each using
 no matter how many are on the page, nor how many are added or removed.
 reload
 neat
 you should find that all of the buttons when clicked will create a paragraph.
- getting scripts to load at the right time. 
+getting scripts to load at the right time. 
 on a page is loaded in the order in which it appears.
 you are trying to do something to.
 parsed
@@ -152,7 +153,7 @@ rendering
 You get no guarantee
 script loading methods
 cropped
- load in
+load in
 get on 
 lobby
 depend on the DOM being in place 
@@ -161,18 +162,18 @@ If your scripts should be run immediately and they don't have any dependencies, 
 If your scripts need to wait for parsing and depend on other scripts and/or the DOM being in place, load them using defer and put their corresponding <script> elements in the order you want the browser to execute them.
 As with 
 fellow developers on how the code works
- for larger applications.
+for larger applications.
 forward slash
- single line
+single line
 multi-line
- annotate
+annotate
 like so 
 append 
 Along the way
 fit in
 amongst other things.
 daunting 
- will make sense going forward
+will make sense going forward
 we will plunge straight into the practical, getting you to jump straight in and build your own JavaScript examples.
 splash 
 what the process of creating a simple JavaScript program is like
@@ -181,8 +182,8 @@ Prerequisites
 literacy 
 gain at least a basic understanding of what writing a JavaScript program involves.
 In subsequent articles you'll revisit all the features shown here in a lot more detail
- The code syntax
- but the concepts are still largely the same.
+The code syntax
+but the concepts are still largely the same.
 Thinking like a programmer
 mixture
 The more you code, the better you'll get at it
@@ -200,9 +201,9 @@ setup
 unlike
 initialized
 assign
- equals sign
+equals sign
 mathematical algorithm.
- keyword
+keyword
 Summary
 resetting
 constants store references
@@ -231,14 +232,14 @@ built-in
 wheter a ceartain condition is true or no
 we have a nicely implemented
 The constructs that listen out for the event happening are called event listeners
- and the blocks of code that run in response to the event firing are called event handlers.
+and the blocks of code that run in response to the event firing are called event handlers.
 input values 
 output values 
 listen out for 
 should work — to a point.
- then walk through it
+then walk through it
 disable 
- form text input
+form text input
 which would mess things up.
 append 
 Installing basic software
@@ -246,36 +247,35 @@ install
 computer running Windows, macOS or Linux.
 to write code in 
 text editor 
-suitable
-, as they rely on hidden elements that interfere with the rendering engines used by web browsers.
+suitable, as they rely on hidden elements that interfere with the rendering engines used by web browsers.
 to test code in 
 mobile devices 
 target audience 
 visually-impaired users
- version control system
- collaborate on a project with a team
+version control system
+collaborate on a project with a team
 avoid conclicts 
 hosting service 
 automation
 to automatically perform repetitive tasks, such as minifying code and running tests.
 code hints.
- live previews
- compatible
+live previews
+compatible
 You might sometimes run into a project that requires support for it.
 What information does my website offer
 What does my site do
 First things first 
 your first try 
- simple high-level terms
+simple high-level terms
 detailed guidelines
 brand book
 sketching out your design
 you should get in the habit of doing this
 start out
- Even on real, complex websites, the design teams usually start out with rough sketches on paper and later on build digital mockups using a graphics editor or web technologies.
- UX designers have a somewhat more abstract role in addressing how users will experience and interact with the website.
- Keep these close by.
- that mirrors the published website's file structure on the server.
+Even on real, complex websites, the design teams usually start out with rough sketches on paper and later on build digital mockups using a graphics editor or web technologies.
+UX designers have a somewhat more abstract role in addressing how users will experience and interact with the website.
+Keep these close by.
+that mirrors the published website's file structure on the server.
 root of your hard drive.
 an aside on casting and spacing 
 no spaces
@@ -289,15 +289,15 @@ File paths
 route 
 exactly as shown. 
 For now, this is about all you need to know.
- but before long
+but before long
 simplified diagram
 toolbox
- which is a shop you want to buy something from.
+which is a shop you want to buy something from.
 communication protocols 
 how data should travel across the internet
- transport mechanisms
+transport mechanisms
 or however else you might get around
- retrieve 
+retrieve 
 the website lives on 
 a bit later 
 web address
@@ -307,18 +307,18 @@ parsed by the browser
 lead
 Packets 
 chunks 
- exchange 
+exchange 
 dealer 
 gather
 What went wrong ?
 Never fear
 this article aims to save you
 tear your hair out 
- These are spelling errors
+These are spelling errors
 so it's not quite that simple 
 differentiators as you drill down deeper
 track down
- alongside
+alongside
 square brackets and separated by commas. 
 "dynamically typed language
 data type a variable will contain 
@@ -343,7 +343,6 @@ Changing case
 capitalization 
 match
 pad
-
 Types of numbers 
 Integers
 Floating point numbers
