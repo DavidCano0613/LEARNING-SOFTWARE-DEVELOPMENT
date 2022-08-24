@@ -54,16 +54,3 @@ authTokenRouter.get("/profile", async (req, res) => {
 export default authTokenRouter;
 
 
-
-
-//* Para authsesion: Para cerrar sesion lo ideal es que en el servidor se elimine esa sesion tambien por lo cual se puede crear otro endpoit que reicba el mismo sesion id y lo elimine del array o la base de datos, y luego setear la cokie del navegadro a vacio o poner fecha de caducida de un segundo asi nos aseguramos que la sesion id no tenga relavancia ni el en el cliente ni el servidor
-
-//* El token es bastante particular ya que debe cumplir con 3 requisitos minimamente.
-
-// 1. Debe permitir meter dentro información, en este se va meter el id del usuaario de tal manera que el token sabe a que usuario  pertenece y a quien autentica.
-
-// 2 Se debe poder definir la duración de ese token, pasado ese tiempo ese token deja de ser valido.
-
-// 3 Debe poder ser verificable, esto implica dos cosas, que no se pueda alterar y si se altera deje de ser valido  y que podamos ser capaces de verificar que fuimos nosotros los que los generamos. En ese sentido los tokens tienen una firma y cuando estos llegan al servidor nosotros comprobamos si nosotros hicimos esa firma.
-
-// El jwt esta compuesto por tres partes. la uno es la cabecera indica el algoritmo y el tipo de token que vamos a genera, esta en base 64. Dentro de los tokens de tipo json hay algunos más seria buena idea saber cuales son. Luego sigue la información que se ha introducido en el token habitualmente el id del usuario la fecha en la que fue creado el token y la caducidad, no es ideal poner información sensible aqui, es muy importante saber usarlos. La tercera parte es una firma que es una clave secreta si se altera el contenido la clave no coincidira, es un hash. El token cualquier persona lo puede leer porque es base 64 entonces de puede decodificar. Por lo tanto no guardar información personal del usuario en los tokens. Hay otros que van cifrados, es algo más avanzado. JOSE es una libreria

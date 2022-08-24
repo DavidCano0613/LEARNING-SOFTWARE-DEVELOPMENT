@@ -133,7 +133,8 @@ Es posible usar modulos de npm para gestionarlos podemos ir npm y buscar libreri
 
 Esto se hace para no reinventar la rueda ademas incluso en cosas muy snecillas no se tiene en cuenta casos de usos y expeciones que puede romper el código, y es algo que ya estos paquetes han tenido muy en cuenta, sin embargo hay que tener cuidado al usarlos, tratar de no añadir mas de lo necesario y siempre chequear que estos esten actualizados.
 
----
+
+# Event Timer 
 
 # MODULO BUFFERS AND STREAMS
 
