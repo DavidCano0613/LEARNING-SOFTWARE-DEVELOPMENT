@@ -3,12 +3,16 @@ import authByEmailPassword from '../node/helpers/check-email-password.js';
 import { nanoid } from "nanoid";
 import { USERS_BBDD } from '../node/bdd.js';
 import { SignJWT, jwtVerify } from 'jose';
+import validateLoginDTO from '../dto/validate-login-dto.js'
 
 const authTokenRouter = Router();
 
-authTokenRouter.post("/login", async (req, res) => {
+authTokenRouter.post("/login",validateLoginDTO,async (req, res) => {
+  //Este es nuestro DTO
   const { email, password } = req.body;
+
   if (!email || !password) return res.sendStatus(400);
+  
   try {
     const { guid } = authByEmailPassword(email, password);
     //Generar el token y devolverlo 
@@ -21,9 +25,12 @@ authTokenRouter.post("/login", async (req, res) => {
       .sign(encoder.encode(process.env.JWT_PRIVATE_KEY));
     //el jwt puede ir en cookie
     return res.send({ jwt });
-  } catch (error) {
+  } 
+  
+  catch (error) {
     return res.sendStatus(401);
   }
+
 });
 
 authTokenRouter.get("/profile", async (req, res) => {

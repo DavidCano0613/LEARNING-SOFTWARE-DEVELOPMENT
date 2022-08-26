@@ -1,3 +1,4 @@
+
 :root{
   --Dark-Violet: hsl(256, 26%, 20%);
   --Grayish-Blue: hsl(216, 30%, 68%);
@@ -7,7 +8,6 @@
   --font1:'DM Serif Display', serif;
   --font2:'Karla', sans-serif;
   --padding-container: 80px 0;
-
 }
 
 *{
