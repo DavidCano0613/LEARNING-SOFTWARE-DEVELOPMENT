@@ -1,0 +1,48 @@
+Bases de datos
+
+Una base de datos no es mas que un conjunto de datos estructurado y almacenado permanente a un mismo contexto.
+
+Diagrama de conexión 
+Es de lo que hablamos cuando nos referimos a conectar una aplicación a un SGDB
+el backend debe saber que tipo de mensajes. 
+
+Se suelen usar Librerias para conectarse a las bases de datos
+
+Tipos
+
+Driver: Nos permite conectar con el SGBD
+
+Query Builder: Construir mensajes en el lenguaje del SGBD
+
+ORM/ODM: Mapear la forma de los datos de la BD a la forma que utilizamos en JS. Es decir nos abstraemos del uso de la base de datos como tal. 
+
+aplicacionJuanDavidCano
+
+appDavidCano
+zwNzqqO6KQ66GRvy
+
+La URL de conexión a la base de datos es diferente segun el ordenar de cada desarrollador y segun el entorno por ejemplo en producción la URL de conexión cambia 
+
+Lo mas correcto es para conectar la base de datos al backend, no es hacer conexción por  petición, si no hacerlo cuando se levanta el backend o el servidor establecemos esa conexión y a mededia q nos lleguen peticiones pues vamos haciendo CRUD a la base de datos para no estarnos conectando y desconecatnos de la base de datos.
+
+1. El codigo que levanta el servidor es INDEX  
+Mongose es un objeto que tiene el metodo connect 
+
+
+2 terminos fundamentales
+ESQUEMA Y MODELO
+
+Es la forma que toman los datos en la base de datos, un usuario necesita un esquema usuario, normlamente un formato objeto y esto es lo que va y se define el base de datos y tenemos que definir tantos esquemas como entidades tengamos en nuestra aplicaciíon
+
+El modelo es ese esquema compilado, es un objeto que nos permite hacer CRUD de esa entidad, el modelo es un objeto que podremos usar en JS para manipularlo y hacer el CRUD 
+
+en mongoose debe poner el exec para manipularlo como promesa
+
+
+
+
+
+
+
+
+

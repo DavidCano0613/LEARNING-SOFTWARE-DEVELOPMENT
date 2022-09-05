@@ -21,29 +21,31 @@
 //* Métodos JavaScript para JSON: Nos permiten convertir datos de json a javascript y viceversa.
 
 //* JSON.stringify(): Convierte un tipo de dato JavaScript a notación JSON.
-// console.log(JSON.stringify("Hola mundo"))
-// console.log(JSON.stringify(123))
-// console.log(JSON.stringify(true))
-// console.log(JSON.stringify(false))
-// console.log(JSON.stringify({}))
-// console.log(JSON.stringify([1,2,true,"String"]))
-// console.log(JSON.stringify(null));
-// console.log(JSON.stringify(undefined));
-// const user = {
-//   name: "Juan",
-//   lastname: "Paniagua",
-// };
+console.log(JSON.stringify("Hola mundo"))
+console.log(JSON.stringify(123))
+console.log(JSON.stringify(true))
+console.log(JSON.stringify(false))
+console.log(JSON.stringify({}))
+console.log(JSON.stringify([1,2,true,"String"]))
+console.log(JSON.stringify(null));
+console.log(JSON.stringify(undefined));
+const user = {
+  name: "Juan",
+  lastname: "Paniagua",
+  edad:21,
+  hobbies: ["Comer","Salir","Pasear","Dormir"]
+};
 
-// console.log(JSON.stringify(user));
+console.log(JSON.stringify(user));
 
 
-//* JSON.parse(): Analiza una notación JSON y la convierte en un tipo de dato JS.
-// console.log(JSON.parse("{}"))
-// console.log(JSON.parse("true"))
-// console.log(JSON.parse("false"))
-// console.log(JSON.parse("350"))
-// console.log(JSON.parse("3.5"))
-// console.log(JSON.parse("[1,2,3,true]"))
-// console.log(JSON.parse("null"))
-// console.log(JSON.parse("undefined"))
+// //* JSON.parse(): Analiza una notación JSON y la convierte en un tipo de dato JS.
+console.log(JSON.parse("{}"))
+console.log(JSON.parse("true"))
+console.log(JSON.parse("false"))
+console.log(JSON.parse("350"))
+console.log(JSON.parse("3.5"))
+console.log(JSON.parse("[1,2,3,true]"))
+console.log(JSON.parse("null"))
+console.log(JSON.parse("undefined"))
 

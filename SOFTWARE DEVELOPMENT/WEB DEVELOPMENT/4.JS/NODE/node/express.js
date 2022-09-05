@@ -6,6 +6,9 @@ import cookieParse from 'cookie-parser';
 import cookieParser from "cookie-parser";
 import authSessionRouter from "../routes/auth_session.js";
 import authTokenRouter from "../routes/auth_token.js";
+import mongoose from 'mongoose'; 
+
+
 
 dotenv.config();
 process.env.PORT;
@@ -23,11 +26,14 @@ expressApp.use('/auth',authRouter);
 expressApp.use('/auth-session',authSessionRouter);
 expressApp.use('/auth-token',authTokenRouter);
 
+const bootstrap = async () => {
+  await mongoose.connect(process.env.MONGODB_URL);
+  expressApp.listen(PORT, () => {
+    console.log("Esta escuchando en el puerto", PORT);
+  }); 
+}
 
-expressApp.listen(PORT,()=>{ 
-  console.log("Esta escuchando en el puerto",PORT);
-
-}) 
+bootstrap()
 
 
 // expressApp.get('/mi-cuenta/:idCuenta/',(req,res)=>{

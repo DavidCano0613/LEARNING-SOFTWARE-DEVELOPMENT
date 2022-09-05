@@ -18,11 +18,9 @@ LIFO: Last in first out, esto tiene que ver con como se ejecutan las tareas que 
 Código Síncrono Bloqueante:
 Cada operación se hace de una vez bloqueando el flujo del hilo principal y este queda bloqueado mientras espera la respuesta para luego liberar recursos y pasar a la siguiente y asi sucesivamente. 
 
-
 ---
 # PROMESAS
-
-Son un objeto especial de JavaScript que representan el resultado eventual de una operación asincrona. Esto significa que existe un código que va realizar una tarea la cual conlleva cierto tiempo (el cual es desconocido en la mayoria de casos) y por lo tanto si existe **Otro código que depende del que esta siendo ejecutado de forma asincrona**. 
+Son un objeto especial de JavaScript que representan el resultado eventual de una operación asincrona. Esto significa que existe un código que va realizar una tarea la cual conlleva cierto tiempo (el cual es desconocido en la mayoria de casos) y por lo tanto si existe **Otro código que depende del que esta siendo ejecutado de forma asincrona** se debe gestionar esto. 
 
 ### Las promesas se pueden descomponer de la siguiente forma:
 
@@ -31,7 +29,7 @@ Son un objeto especial de JavaScript que representan el resultado eventual de un
 3. Resultado = Resuelta o Rechazada.
 
 ### Sintaxis de una promesa
-Las promesas reciben 3 pametros, resolve,reject y una función de tipo callback que dentro de su cuerpo contiene las acciones de la promesa. 
+Las promesas reciben 3 pametros, resolve, reject y una función de tipo callback que dentro de su cuerpo contiene las acciones de la promesa. 
 
 ## Estados de una promesa 
 Las promesas pueden tener varios estados y estos indican que esta pasando o que paso con la promesa. 

@@ -1,14 +1,14 @@
-const $fetch = document.getElementById("fetch")
-const $fragment = document.createDocumentFragment()
+const $fetch = document.getElementById("fetch");
+const $fragment = document.createDocumentFragment();
 const url = "https://jsonplaceholder.typicode.com/users"
 
 fetch(url)
 .then(res => { 
   console.log(res)
     return res.ok === true ? res.json() : Promise.reject(res)
-    //? return res.text() 
+    // return res.text() 
 })
-.then(json =>{
+.then(json => {
   console.log(json)
   json.forEach(element => {
     let $li = document.createElement('li')
@@ -23,17 +23,10 @@ fetch(url)
   $fetch.innerHTML = `${err.status}: ${message}`;
 })
 .finally(()=>
-  console.log(`Esto se ejecutará independientemente del resultado de la Promesa Fetch`)
+  console.log(`Esto se ejecutará independientemente del resultado de la Promesa`)
 );
 
-//*Finally: Es un método de las promesas que se ejecuta sin importan si se resuelve o no la promesax
-
-
-//*Conclusiones: El primer then transforma el readable stream a un objeto de json que se convierte en un objeto de js. En el segundo se hace la lógica de programación y en el catch se captura el error. Hay una forma más optima de hacer esto y es con async-await. 
-
 //=================================================================================
-
-
 
 //*API FETCH CON ASYNC-AWAIT 
 
