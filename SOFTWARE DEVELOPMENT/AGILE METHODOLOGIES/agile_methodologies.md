@@ -189,4 +189,65 @@ Don´t try to include fancy functions, instead focus on delivering software that
 
 https://www.businessnewsdaily.com/4987-what-is-agile-scrum-methodology.html
 
+
+# Issue management system 
+Es la herramienta con la que se trabaja un proyecto de software que permite administrar muy bien proyectos de cualquier tipo de escala. sirven para:
+
+- Create Features
+- Creación y seguimiento de incidencias
+- Gestión de codigos  
+- Test management
+- Gestion de tareas
+- Gestion de todo tipo de reportes
+
+Cada icono indica el tipo de incidencia 
+
+# What is a Feature ? 
+The bussnies analist or the product owner takes the clients ideas and tranforme them into user stories whether it is a feature or epic or a sub-epic- Then The UX and UI team, the development team and the QA team analyze the requirementes and start working on them in their areas. 
+
+As testers we a have to create de **Test design** and **Test cases**. 
+
+Espesificaciones de Reglas 
+Analisis de scope
+Criterios de aceptación 
+Analisis Funcional "Text Exploratory"
+
+# Jerarquia in JIRA
+> INITIATIVE > EPIC > FEATURE > STORY 
+> INITIATIVE 2 > EPIC > FEATURE > STORY
+
+# Jerarquia in AzureDevOps 
+> EPIC > FEATURE > STORY 
+
+> INITIATIVE: Origen of ideas is epics father, en jira es deficil ver init porque es más como el proyecto en si
+
+> FEATURE: Es una funcionalidad del SUT it can be either an epic or a user story
+
+> EPIC: Es una funcionalidad completa grande o compleja como por ejemplo el header, una sección, una página completa, 
+
+> STORY: Es una feature espesifica, un verbo usualmente es lo que se usa para describir una user story 
+
+The login website is big Feature so it is an epic 
+A button is a small feature so it is a user story not an epic.
+
+## What is User story ? 
+Check agile methodologies course
+
+## Where the user stories come from ?
+In the product backlog from the release plan and the it pass to the teams
+Las hace el product owner o el nussnies analist > product backlog > sprint backlog 
+desde el release plan 
+
+## How to create user stories ? 
+- Tittle it has to be descriptive
+- Description of what it contains C Q P
+- User the how-want-for format: As a user I want to be able to buy a product
+- Feature bussiness rules 
+- Priority 
+- Estimation (Story Points)
+- Acceptance criteria (AC)
+
+![](./assets/userstories.png)
+![](./assets/userstoriesss.PNG)
+
 ----
