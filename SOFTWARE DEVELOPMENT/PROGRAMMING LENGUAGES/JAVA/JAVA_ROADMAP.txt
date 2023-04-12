@@ -1,0 +1,28 @@
+JAVA FOR AUTOMATION TESTER
+
+- Basics of Java
+- JDK, JRW, JVM
+- Class, Object, and Types of classes
+- Packages in Java 
+- Data types in Java
+- Variables, Constants and Literals 
+- Methods in Java
+- Constructor in Java
+- Modifiers in Java
+- OOPs concepts  
+- Inner Class in Java 
+- Keywords
+- Garbage Collection
+- Input and Output Stream
+- Collections Framework
+- Serilialization
+- Exception Handeling in Java
+- Java  Arrays and String, Strin gbuffer, String Builder
+- Java Thread
+- Java Annotations 
+
+Certifications
+Oracle Certified Associate, Java SE 8 Programmer 
+
+
+

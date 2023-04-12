@@ -1,0 +1,31 @@
+TypeOf
+undifenided
+NaN
+parseo de datos
+concatenación en java
+metodos de cadenas
+metodos numericos
+metodos de arreglos
+
+Objeto date
+objeto math 
+
+// Method Overloading: Duplicating the methods by giving different number of paramaters
+
+// Method Overrriding: Duplicate method in child class can replace the method in parent class, 
+
+in other words, if create the same method in the same class it is overloading
+if creating the same method in child class (Which comes from parent class) it is overriding 
+
+
+Overrding and overloading might happend at the same time
+
+
+
+Modifiers 
+they are applied to Classes, Variables and Methods 
+They modify the behavior of them 
+
+
+static 
+variables and methods of clases

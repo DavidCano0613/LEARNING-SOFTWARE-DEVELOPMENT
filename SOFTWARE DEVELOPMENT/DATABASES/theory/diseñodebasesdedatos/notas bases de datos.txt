@@ -1,0 +1,106 @@
+links:
+https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/#dbdiagramio
+https://static.platzi.com/media/user_upload/ModeloEntidadRelacion-d3389730-700d-4d4d-a965-90bd0723605e.jpg
+https://static.platzi.com/media/user_upload/ConjuntosDeDatos-264ce4c5-646d-4a86-ac8b-20b7d2ac94c6.jpg
+https://static.platzi.com/media/user_upload/diagrama%20ER-ed0a237c-3e8e-4057-83f2-07fbac9c8548.jpg{
+https://static.platzi.com/media/user_upload/DiagramaF%C3%ADsico%3Atipo%20de%20datos%20y%20constraints-e18d3f34-6bb7-424b-8256-8212049045ce.jpg
+https://imgur.com/SKGlGXK
+https://static.platzi.com/media/user_upload/1-26b5bcbc-0116-4275-ba24-007bcca655a8.jpg
+
+Base de datos concesionario de carros 
+
+Identificación de las entidades. 
+
+Ciudades
+Almacen 
+Carros
+Departamentos
+Empleados
+Clientes
+Proveedores
+Facturas 
+Ventas
+Compras
+
+Identificación de sus atributos 
+Establecer la cardinalidad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notas de bases de datos: 
+
+-Aqui se explico algo muy importante sobre el ahorro de memoria a la hora de poner el diagrama de la base de datos en el mundo real (En el motor de base de datos ya sea SQLSERVER o Oracle). El Char sirve para declarar un campo rigido de disco que vamos a ocupar y el varchar puede cambiar la longitud dependiento del largo de los datos que metamos en el. Seguramente esten pensando que lo mejor es un varchar para todo ya que es dinamico. Pero que el motor de base de datos haga los procesos de calcular la nueva longitud de cada dato del tipo varchar que ingresemos nos puede dar problemas de rendimiento. Si estamos seguros que un dato solo ocupara un char de 5 ocupemos un char de 5. Estas son algunas de las buenas practicas que se debe tener para el funcionamiento de un motor de base de datos.
+
+-Diferencia entre NUMERIC y DECIMAL:
+-NUMERIC debe ser exactamente tan preciso como está definido, de modo que si define 4 posiciones decimales, la database siempre debe almacenar 4 decimales.
+-DECIMAL debe ser al less tan preciso como se define. Esto significa que la database puede almacenar más dígitos que los especificados (debido a que el espacio de almacenamiento detrás de escena tiene espacio para dígitos adicionales). Esto significa que la database podría almacenar 1.00005 lugar de 1.0000 , lo que afectaría los cálculos futuros.
+
+-Link: http://sql.dokry.com/diferencia-entre-decimal-y-numeric.html
+
+-Tipos de dato numéricos
+Listado de cada uno de los tipos de dato numéricos en MySQL, su ocupación en disco y valores.
+
+INT (INTEGER): Ocupación de 4 bytes con valores entre -2147483648 y 2147483647 o entre 0 y 4294967295.
+SMALLINT: Ocupación de 2 bytes con valores entre -32768 y 32767 o entre 0 y 65535.
+TINYINT: Ocupación de 1 bytes con valores entre -128 y 127 o entre 0 y 255.
+MEDIUMINT: Ocupación de 3 bytes con valores entre -8388608 y 8388607 o entre 0 y 16777215.
+BIGINT: Ocupación de 8 bytes con valores entre -8388608 y 8388607 o entre 0 y 16777215.
+DECIMAL (NUMERIC): Almacena los números de coma flotante como cadenas o string.
+FLOAT (m,d): Almacena números de coma flotante, donde ‘m’ es el número de dígitos de la parte entera y ‘d’ el número de decimales.
+DOUBLE (REAL): Almacena número de coma flotante con precisión doble. Igual que FLOAT, la diferencia es el rango de valores posibles.
+BIT (BOOL, BOOLEAN): Número entero con valor 0 o 1.
+Tipos de dato con formato fecha
+Listado de cada uno de los tipos de dato con formato fecha en MySQL, su ocupación en disco y valores.
+
+DATE: Válido para almacenar una fecha con año, mes y día, su rango oscila entre ‘1000-01-01′ y ‘9999-12-31′.
+DATETIME: Almacena una fecha (año-mes-día) y una hora (horas-minutos-segundos), su rango oscila entre ‘1000-01-01 00:00:00′ y ‘9999-12-31 23:59:59′.
+TIME: Válido para almacenar una hora (horas-minutos-segundos). Su rango de horas oscila entre -838-59-59 y 838-59-59. El formato almacenado es ‘HH:MM:SS’.
+TIMESTAMP: Almacena una fecha y hora UTC. El rango de valores oscila entre ‘1970-01-01 00:00:01′ y ‘2038-01-19 03:14:07′.
+YEAR: Almacena un año dado con 2 o 4 dígitos de longitud, por defecto son 4. El rango de valores oscila entre 1901 y 2155 con 4 dígitos. Mientras que con 2 dígitos el rango es desde 1970 a 2069 (70-69).
+Diferentes tipos de dato con formato string
+Listado de cada uno de los tipos de dato con formato string en MySQL, su ocupación en disco y valores.
+
+CHAR: Ocupación fija cuya longitud comprende de 1 a 255 caracteres.
+VARCHAR: Ocupación variable cuya longitud comprende de 1 a 255 caracteres.
+TINYBLOB: Una longitud máxima de 255 caracteres. Válido para objetos binarios como son un fichero de texto, imágenes, ficheros de audio o vídeo. No distingue entre minúculas y mayúsculas.
+BLOB: Una longitud máxima de 65.535 caracteres. Válido para objetos binarios como son un fichero de texto, imágenes, ficheros de audio o vídeo. No distingue entre minúculas y mayúsculas.
+MEDIUMBLOB: Una longitud máxima de 16.777.215 caracteres. Válido para objetos binarios como son un fichero de texto, imágenes, ficheros de audio o vídeo. No distingue entre minúculas y mayúsculas.
+LONGBLOB: Una longitud máxima de 4.294.967.298 caracteres. Válido para objetos binarios como son un fichero de texto, imágenes, ficheros de audio o vídeo. No distingue entre minúculas y mayúsculas.
+SET: Almacena 0, uno o varios valores una lista con un máximo de 64 posibles valores.
+ENUM: Igual que SET pero solo puede almacenar un valor.
+TINYTEXT: Una longitud máxima de 255 caracteres. Sirve para almecenar texto plano sin formato. Distingue entre minúculas y mayúsculas.
+TEXT:Una longitud máxima de 65.535 caracteres. Sirve para almecenar texto plano sin formato. Distingue entre minúculas y mayúsculas.
+MEDIUMTEXT:Una longitud máxima de 16.777.215 caracteres. Sirve para almecenar texto plano sin formato. Distingue entre minúculas y mayúsculas.
+LONGTEXT: Una longitud máxima de 4.294.967.298 caracteres. Sirve para almecenar texto plano sin formato. Distingue entre minúculas y mayúsculas.
+
+
+-Excelente clase, estos son mis apuntes:
+
+1FN Primera forma normal: Atributos atómicos (Sin campos repetidos). Esto quiere decir que ningún campo puede tener el mismo tipo de valor como varios campos materia (materia1, materia2,…).
+
+2FN Segunda forma normal: Cumplir con 1FN y Cada campo de la tabla debe depender de una clave única. Es decir en las tablas no se puede repetir los campos primarios ya que los mismos son únicos por tanto si existe una relación uno a muchos se debe crear una tabla aparte donde cohabitaran la llave primaria de la primera tabla y la llave primaria de la segunda tabla de esta forma logramos relacionar de manera efectiva dos tablas respetando las llaves primarias.
+
+3FN Tercera forma normal: Cumple 1FN y 2FN y los campos que NO son clave NO deben tener dependencias. Esto nos indica que todos los campos de la tabla deben estar estrechamente relacionados con el campo primario y no serlo de manera transitiva, por ejemplo, en una tabla torneos tenemos el código del torneo el nombre el ganador y la fecha de nacimiento del ganador, como observamos no podemos tener la fecha de nacimiento del ganador en dicha tabla ya que no está relacionada para nada con el torneo y además existe la posibilidad que en varios registros el mismo ganador tenga diferentes fechas de nacimiento por lo cual no mantendría la consistencia de los datos.
+
+4FN Cuarta forma normal: Cumplir 1FN 2FN y 3FN. Los campos multivaluados se identifican por una clave única. Cuando relacionamos dos tablas totalmente independientes cada una de la otra debemos relacionarlas a través de una tabla aparte de las mismas donde solo colocaremos las llaves primarias de cada tabla ya que colocar cualquier otra información relacionada con las tablas implicaría repetir datos, además de hacer la tarea de actualización de registros primarias más compleja, ya que por ejemplo si deseo actualizar el nombre del curso no solo lo tendría que hacer en la tabla cursos sino también en cada tabla donde coloque el nombre lo cual no garantiza la integridad de la información, adiciona información innecesaria en los registros y hace más complejo el trabajo de administrar los datos.
+
+-Proceso de normalización El proceso de normalización es un estándar que consiste, básicamente, en un proceso de conversión de las relaciones entre las entidades, evitando:
+
+La redundancia de los datos: repetición de datos en un sistema.
+Anomalías de actualización: Inconsistencias de los datos como resultado de datos redundantes y actualizaciones parciales.
+Anomalías de borrado: Pérdidas no intencionadas de datos debido a que se han borrado otros datos.
+Anomalías de inserción: Imposibilidad de adicionar datos en la base de datos debido a la ausencia de otros datos.
